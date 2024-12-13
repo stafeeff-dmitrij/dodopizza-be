@@ -3,7 +3,6 @@ from pathlib import Path
 
 import environ
 
-
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 ROOT_DIR = BASE_DIR.parent
 
@@ -16,7 +15,7 @@ PROJECT_VERSION = '0.0.1'
 
 SECRET_KEY = env('DJANGO_SECRET_KEY')
 DEBUG = env('DJANGO_DEBUG')
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS: list[str] = []  # TODO Убрать типизацию после подключения фронта (ругается линтер)
 WSGI_APPLICATION = 'config.wsgi.application'
 ROOT_URLCONF = 'config.urls'
 
