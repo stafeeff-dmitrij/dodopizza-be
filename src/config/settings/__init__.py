@@ -8,3 +8,4 @@ from .django_static import *
 from .django_i18n import *
 
 from .rest_framework import *
+from .spectacular import *

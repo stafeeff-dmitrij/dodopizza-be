@@ -7,7 +7,7 @@ import environ
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 ROOT_DIR = BASE_DIR.parent
 
-env = environ.Env(DEBUG=(bool, False), EXT_PORT=(str, ''), HOST=(str, 'localhost'))
+env = environ.Env(DEBUG=(bool, False), PORT=(str, ''), HOST=(str, 'localhost'))
 environ.Env.read_env(os.path.join(ROOT_DIR, '.env'))
 
 PROJECT_TITLE = 'ДОДО ПИЦЦА'
