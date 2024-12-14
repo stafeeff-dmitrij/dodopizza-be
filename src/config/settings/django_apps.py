@@ -1,5 +1,4 @@
 INSTALLED_APPS = [
-    # DJANGO
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -7,6 +6,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # Swagger UI
+    'rest_framework',
     'drf_spectacular',
+
+    'apps.catalog',
 ]

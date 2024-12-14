@@ -131,3 +131,4 @@ dmypy.jsong
 .idea/*
 .env
 /.idea/
+/fixtures/
