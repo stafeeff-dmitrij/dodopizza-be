@@ -3,3 +3,4 @@ django-environ==0.11.2
 psycopg2-binary==2.9.10
 drf-spectacular==0.28.0
 django-mptt==0.16.0
+colorlog==6.9.0
