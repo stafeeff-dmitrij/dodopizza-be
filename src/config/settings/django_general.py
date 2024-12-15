@@ -4,6 +4,7 @@ from pathlib import Path
 
 import environ
 
+
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 ROOT_DIR = BASE_DIR.parent
 
@@ -22,7 +23,10 @@ PROJECT_VERSION = pyproject_data['project']['version']
 
 SECRET_KEY = env('DJANGO_SECRET_KEY')
 DEBUG = env('DJANGO_DEBUG')
-ALLOWED_HOSTS: list[str] = []
+
+ALLOWED_HOSTS: list[str] = ["*"]
+CORS_ALLOWED_ORIGINS = env('ALLOWED_ORIGINS').split(',')
+
 WSGI_APPLICATION = 'config.wsgi.application'
 ROOT_URLCONF = 'config.urls'
 
@@ -32,3 +36,8 @@ DB_PORT = env('DB_PORT')
 DB_NAME = env('DB_NAME')
 DB_USER = env('DB_USER')
 DB_PASS = env('DB_PASS')
+
+REDIS_HOST = env('REDIS_HOST')
+REDIS_PORT = env('REDIS_PORT')
+REDIS_DB = env('REDIS_DB')
+CACHE_TIMEOUT = 60 * 60  # 1 час
