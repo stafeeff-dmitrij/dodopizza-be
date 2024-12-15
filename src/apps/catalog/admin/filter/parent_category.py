@@ -6,14 +6,14 @@ class ParentCategoryFilter(admin.SimpleListFilter):
     Фильтрация по признаку категорий 'родительская' / 'дочерняя запись'
     """
 
-    title = 'категория'
+    title = 'тип категории'
     parameter_name = 'category'
 
     def lookups(self, request, model_admin):
         """ Варианты фильтрации """
         return (
-            ('parent', 'Главные'),
-            ('not_parent', 'Подкатегории'),
+            ('parent', 'Главная'),
+            ('child', 'Подкатегория'),
         )
 
     def queryset(self, request, queryset):
@@ -22,7 +22,7 @@ class ParentCategoryFilter(admin.SimpleListFilter):
         if self.value() == 'parent':
             return queryset.filter(parent=None)
 
-        if self.value() == 'not_parent':
+        if self.value() == 'child':
             return queryset.exclude(parent=None)
 
         return queryset

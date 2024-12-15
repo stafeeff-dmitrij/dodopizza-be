@@ -9,6 +9,7 @@ class Category(MPTTModel):
     Категории товаров
     """
 
+    order = models.IntegerField(verbose_name='Порядок отображения', unique=True)
     name = models.CharField(max_length=100, verbose_name='название')
     parent = TreeForeignKey(
         'self',
@@ -30,6 +31,7 @@ class Category(MPTTModel):
         db_table = 'categories'
         verbose_name = 'категория'
         verbose_name_plural = 'категории'
+        ordering = ('order',)
 
     def __str__(self) -> str:
         return self.name

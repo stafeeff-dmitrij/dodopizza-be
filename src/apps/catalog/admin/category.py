@@ -18,12 +18,12 @@ class CategoryAdmin(DraggableMPTTAdmin):
     Категории товаров
     """
 
-    list_display = ('id', 'name', 'parent', 'status')
+    list_display = ('id', 'order', 'name', 'parent', 'status')
     list_display_links = ('id', 'name')
     list_filter = ('status', ParentCategoryFilter)
     search_fields = ('name',)
     list_editable = ('status',)
-    ordering = ('id',)
+    ordering = ('order',)
 
     # Отключение / включение записей
     actions = (deactivate_records, activate_records)
@@ -43,7 +43,7 @@ class CategoryAdmin(DraggableMPTTAdmin):
                 messages.add_message(
                     request,
                     level=messages.ERROR,
-                    message=f"Нельзя активировать подкатегорию, если ее родительская категория '{obj.parent.name}' отключена!"
+                    message=f'Нельзя активировать подкатегорию, если ее родительская категория "{obj.parent.name}" отключена!'
                 )
                 return
 
@@ -61,8 +61,8 @@ class CategoryAdmin(DraggableMPTTAdmin):
                 messages.add_message(
                     request,
                     level=messages.ERROR,
-                    message=f"Превышена максимальная вложенность категорий в {max_indent} уровня! "
-                    f"Текущая вложенность: {lvl + 1}",
+                    message=f'Превышена максимальная вложенность категорий в {max_indent} уровня! '
+                    f'Текущая вложенность: {lvl + 1}',
                 )
                 return
 
