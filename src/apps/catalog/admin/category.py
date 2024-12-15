@@ -1,15 +1,29 @@
 from django.contrib import admin, messages
 from mptt.admin import DraggableMPTTAdmin
 
-from apps.catalog.admin.actions.activate import activate_records
-from apps.catalog.admin.actions.deactivate import deactivate_records
-from apps.catalog.admin.filter.parent_category import ParentCategoryFilter
+from apps.catalog.admin.actions import activate_record, deactivate_records
+from apps.catalog.admin.filter import ParentCategoryFilter
+from apps.catalog.admin.form import SubcategoryModelForm
 from apps.catalog.models import Category
-from apps.catalog.utils.status import change_status_child_records
+from apps.catalog.utils import change_status_child_records, check_max_level_category
 from config.settings import PROJECT_VERSION
 
 admin.site.site_title = 'ДОДО ПИЦЦА'
 admin.site.site_header = f"ДОДО ПИЦЦА (v{PROJECT_VERSION}). Административная панель"
+
+
+class SubcategoryInline(admin.StackedInline):
+    """
+    Подкатегории
+    """
+
+    model = Category
+    extra = 0
+    ordering = ('order',)
+    verbose_name = 'Подкатегория'
+    verbose_name_plural = 'Подкатегории'
+
+    form = SubcategoryModelForm
 
 
 @admin.register(Category)
@@ -25,45 +39,40 @@ class CategoryAdmin(DraggableMPTTAdmin):
     list_editable = ('status',)
     ordering = ('order',)
 
-    # Отключение / включение записей
-    actions = (deactivate_records, activate_records)
+    inlines = [SubcategoryInline]
+
+    actions = (deactivate_records, activate_record)  # Отключение / включение записей
 
     def save_model(self, request, obj, form, change):
         """
-        Проверка уровня вложенности категории перед сохранением
+        Проверка статусов и уровня вложенности категорий перед сохранением
         """
 
         # изменение записи
         if change:
             new_status = form.cleaned_data.get('status')
 
-            # запрещаем включать подкатегорию, если родительская категория отключена
             if obj.parent and obj.parent.status is False and new_status is True:
                 messages.set_level(request, messages.ERROR)  # Меняем уровень сообщения на ERROR
                 messages.add_message(
                     request,
                     level=messages.ERROR,
-                    message=f'Нельзя активировать подкатегорию, если ее родительская категория "{obj.parent.name}" отключена!'
+                    message=f'Нельзя активировать подкатегорию "{obj.name}", '
+                    f'если ее родительская категория "{obj.parent.name}" отключена!'
                 )
                 return
 
-            # меняем для дочерних категорий статус как у родителя
-            if not obj.parent:
+            # при отключении категории также отключаем все подкатегории
+            if not obj.parent and new_status is False:
                 change_status_child_records(records=[obj], active=new_status)
 
-        # для новых записей максимальная вложенность категорий 2
-        if obj.parent:
-            max_indent = 2
-            lvl = obj.parent.level + 1
-
-            if lvl >= max_indent:
-                messages.set_level(request, messages.ERROR)  # Меняем уровень сообщения на ERROR
-                messages.add_message(
-                    request,
-                    level=messages.ERROR,
-                    message=f'Превышена максимальная вложенность категорий в {max_indent} уровня! '
-                    f'Текущая вложенность: {lvl + 1}',
-                )
-                return
+        if obj.parent and not check_max_level_category(category=obj):
+            messages.set_level(request, messages.ERROR)  # Меняем уровень сообщения на ERROR
+            messages.add_message(
+                request,
+                level=messages.ERROR,
+                message='Превышена максимальная вложенность категорий в 2 уровня! Текущая вложенность: 3'
+            )
+            return
 
         super().save_model(request, obj, form, change)

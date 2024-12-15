@@ -3,7 +3,7 @@ from django.contrib import admin
 from apps.catalog.utils.status import change_status_child_records
 
 
-@admin.action(description='Отключить записи')
+@admin.action(description='Отключить записи (включая дочерние)')
 def deactivate_records(adminmodel, request, queryset):
     """
     Смена статуса на 'Не активно', включая всех дочерних записей

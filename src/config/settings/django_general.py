@@ -1,4 +1,5 @@
 import os
+import tomllib
 from pathlib import Path
 
 import environ
@@ -9,13 +10,19 @@ ROOT_DIR = BASE_DIR.parent
 env = environ.Env(DEBUG=(bool, False), EXT_PORT=(str, ''), HOST=(str, 'localhost'))
 environ.Env.read_env(os.path.join(ROOT_DIR, '.env'))
 
+pyproject_file = os.path.join(ROOT_DIR, 'pyproject.toml')
+
+with open(pyproject_file, 'rb') as f:
+    pyproject_data = tomllib.load(f)
+
+
 PROJECT_TITLE = 'ДОДО ПИЦЦА'
 PROJECT_DESCRIPTION = 'Самая вкусная пицца на свете'
-PROJECT_VERSION = '0.0.1'
+PROJECT_VERSION = pyproject_data['tool']['commitizen']['version']
 
 SECRET_KEY = env('DJANGO_SECRET_KEY')
 DEBUG = env('DJANGO_DEBUG')
-ALLOWED_HOSTS: list[str] = []  # TODO Убрать типизацию после подключения фронта (ругается линтер)
+ALLOWED_HOSTS: list[str] = []
 WSGI_APPLICATION = 'config.wsgi.application'
 ROOT_URLCONF = 'config.urls'
 

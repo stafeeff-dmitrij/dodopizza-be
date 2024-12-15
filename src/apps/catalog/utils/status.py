@@ -4,8 +4,9 @@ from apps.catalog.models import Category
 def change_status_child_records(records: list[Category], active: bool) -> None:
     """
     Включение / отключение дочерних записей (смена статуса на 'Активно' / 'Не активно')
-    @param records: категории товаров
-    @param active: флаг для активации или деактивации записей
+
+    :param records: категории товаров
+    :param active: флаг для активации или деактивации записей
     """
 
     deleted_objects = []
