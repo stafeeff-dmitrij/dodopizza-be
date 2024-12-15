@@ -16,9 +16,9 @@ with open(pyproject_file, 'rb') as f:
     pyproject_data = tomllib.load(f)
 
 
-PROJECT_TITLE = 'ДОДО ПИЦЦА'
-PROJECT_DESCRIPTION = 'Самая вкусная пицца на свете'
-PROJECT_VERSION = pyproject_data['tool']['commitizen']['version']
+PROJECT_TITLE = pyproject_data['project']['name']
+PROJECT_DESCRIPTION = pyproject_data['project']['description']
+PROJECT_VERSION = pyproject_data['project']['version']
 
 SECRET_KEY = env('DJANGO_SECRET_KEY')
 DEBUG = env('DJANGO_DEBUG')
