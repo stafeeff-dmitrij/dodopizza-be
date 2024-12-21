@@ -15,5 +15,5 @@ class CategoryListView(viewsets.ModelViewSet):
     Возврат категорий товаров
     """
 
-    queryset = Category.objects.filter(parent=None, status=True).order_by('order')
+    queryset = Category.objects.filter(status=True).order_by('order')
     serializer_class = CategorySerializer

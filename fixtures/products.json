@@ -1,0 +1,1721 @@
+[
+{
+  "model": "catalog.product",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "name": "Кола-барбекю",
+    "description": "Пряная говядина, пикантная пепперони, острые колбаски чоризо, соус кола-барбекю, моцарелла и фирменный томатный соус",
+    "count": 30,
+    "status": true,
+    "categories": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 2,
+  "fields": {
+    "order": 2,
+    "name": "Бефстроганов",
+    "description": "Пряная говядина, шампиньоны, ароматный грибной соус, маринованные огурчики, моцарелла, красный лук, фирменный соус альфредо",
+    "count": 15,
+    "status": true,
+    "categories": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 3,
+  "fields": {
+    "order": 3,
+    "name": "Мясная с аджикой",
+    "description": "Баварские колбаски, острый соус аджика, острые колбаски чоризо, цыпленок, пикантная пепперони, моцарелла, фирменный томатный соус",
+    "count": 0,
+    "status": true,
+    "categories": [
+      2
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 4,
+  "fields": {
+    "order": 4,
+    "name": "Креветки со сладким чили",
+    "description": "Креветки, ананасы, соус сладкий чили, сладкий перец, моцарелла, фирменный соус альфредо",
+    "count": 26,
+    "status": true,
+    "categories": [
+      2,
+      12
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 5,
+  "fields": {
+    "order": 5,
+    "name": "Сырная",
+    "description": "Моцарелла, сыры чеддер и пармезан, фирменный соус альфредо",
+    "count": 45,
+    "status": true,
+    "categories": [
+      2,
+      13
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 6,
+  "fields": {
+    "order": 6,
+    "name": "Пепперони фреш",
+    "description": "Пикантная пепперони, увеличенная порция моцареллы, томаты, фирменный томатный соус",
+    "count": 20,
+    "status": true,
+    "categories": [
+      2,
+      13
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 7,
+  "fields": {
+    "order": 7,
+    "name": "Двойной цыпленок",
+    "description": "Цыпленок, моцарелла, фирменный соус альфредо",
+    "count": 50,
+    "status": true,
+    "categories": [
+      2,
+      13
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 8,
+  "fields": {
+    "order": 8,
+    "name": "Ветчина и сыр",
+    "description": "Ветчина, моцарелла, фирменный соус альфредо",
+    "count": 20,
+    "status": true,
+    "categories": [
+      2,
+      13
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 9,
+  "fields": {
+    "order": 9,
+    "name": "Чоризо фреш",
+    "description": "Острые колбаски чоризо, сладкий перец, моцарелла, фирменный томатный соус",
+    "count": 40,
+    "status": true,
+    "categories": [
+      2
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 10,
+  "fields": {
+    "order": 10,
+    "name": "Ветчина и грибы",
+    "description": "Ветчина, шампиньоны, увеличенная порция моцареллы, фирменный томатный соус",
+    "count": 37,
+    "status": true,
+    "categories": [
+      2
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 11,
+  "fields": {
+    "order": 11,
+    "name": "Жюльен",
+    "description": "Цыпленок, шампиньоны, ароматный грибной соус, лук, сухой чеснок, моцарелла, смесь сыров чеддер и пармезан, фирменный соус альфредо",
+    "count": 40,
+    "status": true,
+    "categories": [
+      2
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 12,
+  "fields": {
+    "order": 12,
+    "name": "Песто",
+    "description": "Цыпленок, соус песто, кубики брынзы, томаты, моцарелла, фирменный соус альфредо",
+    "count": 20,
+    "status": true,
+    "categories": [
+      2,
+      12
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 13,
+  "fields": {
+    "order": 13,
+    "name": "Карбонара",
+    "description": "Бекон, сыры чеддер и пармезан, моцарелла, томаты, красный лук, чеснок, фирменный соус альфредо, итальянские травы",
+    "count": 15,
+    "status": true,
+    "categories": [
+      2,
+      12
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 14,
+  "fields": {
+    "order": 14,
+    "name": "Мясная",
+    "description": "Цыпленок, ветчина, пикантная пепперони, острые колбаски чоризо, моцарелла, фирменный томатный соус",
+    "count": 0,
+    "status": true,
+    "categories": [
+      2,
+      13
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 15,
+  "fields": {
+    "order": 15,
+    "name": "Аррива!",
+    "description": "Цыпленок, острые колбаски чоризо, соус бургер, сладкий перец, красный лук, томаты, моцарелла, соус ранч, чеснок",
+    "count": 30,
+    "status": true,
+    "categories": [
+      2,
+      12
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 16,
+  "fields": {
+    "order": 16,
+    "name": "Бургер-пицца",
+    "description": "Ветчина, маринованные огурчики, томаты, красный лук, чеснок, соус бургер, моцарелла, фирменный томатный соус",
+    "count": 40,
+    "status": true,
+    "categories": [
+      2
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 17,
+  "fields": {
+    "order": 17,
+    "name": "Сырный цыпленок",
+    "description": "Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, фирменный соус альфредо, чеснок",
+    "count": 37,
+    "status": true,
+    "categories": [
+      2
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 18,
+  "fields": {
+    "order": 18,
+    "name": "Додо",
+    "description": "Бекон, митболы, пикантная пепперони, моцарелла, томаты, шампиньоны, сладкий перец, красный лук, чеснок, фирменный томатный соус",
+    "count": 20,
+    "status": true,
+    "categories": [
+      2,
+      12
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 19,
+  "fields": {
+    "order": 19,
+    "name": "Пепперони",
+    "description": "Пикантная пепперони, увеличенная порция моцареллы, фирменный томатный соус",
+    "count": 26,
+    "status": true,
+    "categories": [
+      2,
+      13
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 20,
+  "fields": {
+    "order": 20,
+    "name": "Четыре сезона",
+    "description": "Увеличенная порция моцареллы, ветчина, пикантная пепперони, кубики брынзы, томаты, шампиньоны, итальянские травы, фирменный томатный соус",
+    "count": 47,
+    "status": true,
+    "categories": [
+      2
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 21,
+  "fields": {
+    "order": 21,
+    "name": "Гавайская",
+    "description": "Двойная порция цыпленка, ананасы, моцарелла, фирменный соус альфредо",
+    "count": 30,
+    "status": true,
+    "categories": [
+      2
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 22,
+  "fields": {
+    "order": 22,
+    "name": "Цыпленок барбекю",
+    "description": "Цыпленок, бекон, соус барбекю, красный лук, моцарелла, фирменный томатный соус",
+    "count": 16,
+    "status": true,
+    "categories": [
+      2
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 23,
+  "fields": {
+    "order": 23,
+    "name": "Цыпленок Ранч",
+    "description": "Цыпленок, ветчина, соус ранч, моцарелла, томаты, чеснок, фирменный соус альфредо",
+    "count": 0,
+    "status": true,
+    "categories": [
+      2
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 24,
+  "fields": {
+    "order": 24,
+    "name": "Маргарита",
+    "description": "Увеличенная порция моцареллы, томаты, итальянские травы, фирменный томатный соус",
+    "count": 20,
+    "status": true,
+    "categories": [
+      2,
+      13
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 25,
+  "fields": {
+    "order": 25,
+    "name": "Диабло",
+    "description": "Острые колбаски чоризо, острый перец халапеньо, соус барбекю, митболы из говядины, томаты, сладкий перец, красный лук, моцарелла, фирменный томатный соус",
+    "count": 20,
+    "status": true,
+    "categories": [
+      2
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 26,
+  "fields": {
+    "order": 26,
+    "name": "Колбаски барбекю",
+    "description": "Острые колбаски чоризо, соус барбекю, томаты, красный лук, моцарелла, фирменный томатный соус",
+    "count": 20,
+    "status": true,
+    "categories": [
+      2
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 27,
+  "fields": {
+    "order": 27,
+    "name": "Овощи и грибы",
+    "description": "Шампиньоны, томаты, сладкий перец, красный лук, кубики брынзы, моцарелла, фирменный томатный соус, итальянские травы",
+    "count": 30,
+    "status": true,
+    "categories": [
+      2
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 28,
+  "fields": {
+    "order": 28,
+    "name": "Двойная пепперони",
+    "description": "Двойная порция пикантной пепперони, увеличенная порция моцареллы, фирменный томатный соус",
+    "count": 50,
+    "status": true,
+    "categories": [
+      2
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 29,
+  "fields": {
+    "order": 29,
+    "name": "Додо микс",
+    "description": "Бекон, цыпленок, ветчина, сыры чеддер и пармезан, соус песто, кубики брынзы, томаты, красный лук, моцарелла, фирменный соус альфредо, чеснок, итальянские травы",
+    "count": 35,
+    "status": true,
+    "categories": [
+      2,
+      12
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 30,
+  "fields": {
+    "order": 30,
+    "name": "Соберите свою пиццу",
+    "description": "В основе пиццы увеличенная порция моцареллы и фирменный томатный соус, а другие ингредиенты можно выбрать на свой вкус",
+    "count": 100,
+    "status": true,
+    "categories": [
+      2
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 31,
+  "fields": {
+    "order": 31,
+    "name": "Креветки",
+    "description": "Цельные креветки в хрустящей панировке",
+    "count": 15,
+    "status": true,
+    "categories": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 32,
+  "fields": {
+    "order": 32,
+    "name": "Омлет с беконом в пите",
+    "description": "Горячий сытный омлет с поджаристой корочкой, бекон, моцарелла и томаты в пшеничной пите. Удобно взять с собой",
+    "count": 20,
+    "status": true,
+    "categories": [
+      1,
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 33,
+  "fields": {
+    "order": 33,
+    "name": "Омлет с беконом",
+    "description": "Классическое сочетание горячего омлета с поджаристой корочкой и бекона с добавлением моцареллы и томатов на завтрак",
+    "count": 45,
+    "status": true,
+    "categories": [
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 34,
+  "fields": {
+    "order": 34,
+    "name": "Омлет с ветчиной и грибами в пите",
+    "description": "Горячий сытный омлет с поджаристой корочкой, ветчина, шампиньоны и моцарелла в пшеничной пите. Удобно взять с собой",
+    "count": 55,
+    "status": true,
+    "categories": [
+      1,
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 35,
+  "fields": {
+    "order": 35,
+    "name": "Омлет с ветчиной и грибами",
+    "description": "Горячий сытный омлет с поджаристой корочкой, ветчина, шампиньоны и моцарелла",
+    "count": 20,
+    "status": true,
+    "categories": [
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 36,
+  "fields": {
+    "order": 36,
+    "name": "Омлет с пепперони в пите",
+    "description": "Для тех, кто не пропускает завтраки — омлет с поджаристой корочкой, пикантная пепперони, томаты и моцарелла в пшеничной пите. Удобно взять с собой",
+    "count": 40,
+    "status": true,
+    "categories": [
+      1,
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 37,
+  "fields": {
+    "order": 37,
+    "name": "Омлет с пепперони",
+    "description": "Сытный и сбалансированный завтрак — омлет с поджаристой корочкой, пикантная пепперони, томаты и моцарелла",
+    "count": 30,
+    "status": true,
+    "categories": [
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 38,
+  "fields": {
+    "order": 38,
+    "name": "Омлет сырный",
+    "description": "Горячий завтрак из омлета с поджаристой корочкой, моцарелла, кубики брынзы, сыры чеддер и пармезан",
+    "count": 30,
+    "status": true,
+    "categories": [
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 39,
+  "fields": {
+    "order": 39,
+    "name": "Омлет сырный в пите",
+    "description": "Вариант завтрака в пшеничной пите с омлетом с поджаристой корочкой, моцареллой, кубиками брынзы, сырами чеддер и пармезан. Удобно взять с собой",
+    "count": 33,
+    "status": true,
+    "categories": [
+      1,
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 40,
+  "fields": {
+    "order": 40,
+    "name": "Дэнвич с говядиной",
+    "description": "Хрустящая чиабатта с ароматной пряной говядиной и цыпленком с соусами бургер и барбекю, свежими томатами и моцареллой",
+    "count": 40,
+    "status": true,
+    "categories": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 41,
+  "fields": {
+    "order": 41,
+    "name": "Дэнвич ветчина и сыр",
+    "description": "Поджаристая чиабатта и знакомое сочетание ветчины, цыпленка, моцареллы со свежими томатами, соусом ранч и чесноком",
+    "count": 40,
+    "status": true,
+    "categories": [
+      4
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 42,
+  "fields": {
+    "order": 42,
+    "name": "Дэнвич чоризо барбекю",
+    "description": "Насыщенный вкус острых колбасок чоризо и пикантной пепперони с соусами бургер и барбекю, свежими томатами, маринованными огурчиками, моцареллой и луком в румяной чиабатте",
+    "count": 55,
+    "status": true,
+    "categories": [
+      4,
+      12
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 43,
+  "fields": {
+    "order": 43,
+    "name": "Паста с креветками",
+    "description": "Паста из печи с креветками, томатами, моцареллой, соусом альфредо и чесноком",
+    "count": 44,
+    "status": true,
+    "categories": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 44,
+  "fields": {
+    "order": 44,
+    "name": "Паста Карбонара",
+    "description": "Паста из печи с беконом, сырами чеддер и пармезан, томатами, моцареллой, фирменным соусом альфредо и чесноком",
+    "count": 55,
+    "status": true,
+    "categories": [
+      4
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 45,
+  "fields": {
+    "order": 45,
+    "name": "Паста Мясная",
+    "description": "Паста из печи с пикантной пепперони, цыпленком, соусом бургер, моцареллой и фирменным томатным соусом",
+    "count": 56,
+    "status": true,
+    "categories": [
+      4
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 46,
+  "fields": {
+    "order": 46,
+    "name": "Паста Песто",
+    "description": "Паста из печи с соусом песто, цыпленком, томатами, моцареллой и фирменным соусом Альфредо",
+    "count": 0,
+    "status": true,
+    "categories": [
+      4
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 47,
+  "fields": {
+    "order": 47,
+    "name": "Супермясной Додстер",
+    "description": "Горячая закуска с цыпленком, моцареллой, митболами, острыми колбасками чоризо и соусом бургер в тонкой пшеничной лепешке",
+    "count": 11,
+    "status": true,
+    "categories": [
+      4
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 48,
+  "fields": {
+    "order": 48,
+    "name": "Додстер с ветчиной",
+    "description": "Горячий завтрак с ветчиной, томатами, моцареллой, соусом ранч в тонкой пшеничной лепешке",
+    "count": 22,
+    "status": true,
+    "categories": [
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 49,
+  "fields": {
+    "order": 49,
+    "name": "Додстер",
+    "description": "Легендарная горячая закуска с цыпленком, томатами, моцареллой, соусом ранч в тонкой пшеничной лепешке",
+    "count": 19,
+    "status": true,
+    "categories": [
+      4,
+      12
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 50,
+  "fields": {
+    "order": 50,
+    "name": "Острый Додстер",
+    "description": "Горячая закуска с цыпленком, перчиком халапеньо, маринованными огурчиками, томатами, моцареллой и соусом барбекю в тонкой пшеничной лепешке",
+    "count": 40,
+    "status": true,
+    "categories": [
+      4
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 51,
+  "fields": {
+    "order": 51,
+    "name": "Грибной Стартер",
+    "description": "Горячая закуска с шампиньонами, моцареллой и соусом ранч в тонкой пшеничной лепешке",
+    "count": 30,
+    "status": true,
+    "categories": [
+      4
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 52,
+  "fields": {
+    "order": 52,
+    "name": "Сырный Стартер",
+    "description": "Горячая закуска с очень сырной начинкой. Моцарелла, пармезан, чеддер и соус ранч в тонкой пшеничной лепешке",
+    "count": 40,
+    "status": true,
+    "categories": [
+      4
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 53,
+  "fields": {
+    "order": 53,
+    "name": "Куриные наггетсы",
+    "description": "Нежное куриное мясо в хрустящей панировке",
+    "count": 48,
+    "status": true,
+    "categories": [
+      4,
+      13
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 54,
+  "fields": {
+    "order": 54,
+    "name": "Картофель из печи с соусом",
+    "description": "Запеченная в печи картошечка с пряными специями. В комплекте сырный соус",
+    "count": 50,
+    "status": true,
+    "categories": [
+      4
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 55,
+  "fields": {
+    "order": 55,
+    "name": "Картофель из печи",
+    "description": "Запеченная в печи картошечка — привычный вкус и мало масла. В составе пряные специи",
+    "count": 60,
+    "status": true,
+    "categories": [
+      4,
+      13
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 56,
+  "fields": {
+    "order": 56,
+    "name": "Куриные кусочки",
+    "description": "Сочные кусочки цельного куриного филе с золотистой корочкой",
+    "count": 50,
+    "status": true,
+    "categories": [
+      4,
+      13
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 57,
+  "fields": {
+    "order": 57,
+    "name": "Куриные крылья барбекю",
+    "description": "Куриные крылышки со специями и ароматом копчения",
+    "count": 30,
+    "status": true,
+    "categories": [
+      4
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 58,
+  "fields": {
+    "order": 58,
+    "name": "Ланчбокс с куриными крыльями",
+    "description": "Горячий сытный обед из куриных крылышек со специями и ароматом копчения, пряного картофеля из печи и соуса барбекю",
+    "count": 0,
+    "status": true,
+    "categories": [
+      4
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 59,
+  "fields": {
+    "order": 59,
+    "name": "Ланчбокс с куриными кусочками",
+    "description": "Горячий сытный обед из нежных куриных кусочков, пряного картофеля из печи и сырного соуса",
+    "count": 30,
+    "status": true,
+    "categories": [
+      4
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 60,
+  "fields": {
+    "order": 60,
+    "name": "Салат Цезарь",
+    "description": "Цыпленок, свежие листья салата айсберг, томаты черри, сыры чеддер и пармезан, соус цезарь, пшеничные гренки, итальянские травы",
+    "count": 40,
+    "status": true,
+    "categories": [
+      4
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 61,
+  "fields": {
+    "order": 61,
+    "name": "Сырники со сгущенным молоком",
+    "description": "Нежные сырники, приготовленные в печи, с порционным сгущенным молоком",
+    "count": 40,
+    "status": true,
+    "categories": [
+      5,
+      9,
+      13
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 62,
+  "fields": {
+    "order": 62,
+    "name": "Сырники с малиновым вареньем",
+    "description": "Любимый десерт многих наших гостей — румяные сырники из печи. Такие нежные, в меру сладкие и напоминающие детство",
+    "count": 33,
+    "status": true,
+    "categories": [
+      5,
+      9,
+      13
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 63,
+  "fields": {
+    "order": 63,
+    "name": "Сырники",
+    "description": "Любимый десерт многих наших гостей — румяные сырники из печи. Такие нежные, в меру сладкие и напоминающие детство",
+    "count": 40,
+    "status": true,
+    "categories": [
+      5,
+      9
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 64,
+  "fields": {
+    "order": 64,
+    "name": "Кофе Американо",
+    "description": "Пара глотков горячего Американо, и вы будете готовы покорять этот день",
+    "count": 40,
+    "status": true,
+    "categories": [
+      5,
+      7
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 65,
+  "fields": {
+    "order": 65,
+    "name": "Кофе Капучино",
+    "description": "Король среди кофейных напитков — классический капучино. Для любителей сбалансированного кофейно-молочного вкуса",
+    "count": 50,
+    "status": true,
+    "categories": [
+      5,
+      7
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 66,
+  "fields": {
+    "order": 66,
+    "name": "Кофе Латте",
+    "description": "Когда хочется нежную молочную пенку, на помощь приходит классический латте",
+    "count": 40,
+    "status": true,
+    "categories": [
+      5,
+      7
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 67,
+  "fields": {
+    "order": 67,
+    "name": "Молочный коктейль Ежевика-малина",
+    "description": "Сливочная прохлада классического молочного коктейля с добавлением лесных ягод",
+    "count": 40,
+    "status": true,
+    "categories": [
+      6
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 68,
+  "fields": {
+    "order": 68,
+    "name": "Молочный коктейль Пина Колада",
+    "description": "Тропическое сочетание кокоса и ананаса в нежном милкшейке",
+    "count": 50,
+    "status": true,
+    "categories": [
+      6
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 69,
+  "fields": {
+    "order": 69,
+    "name": "Молочный коктейль с печеньем Орео",
+    "description": "Как вкуснее есть печенье? Его лучше пить! Попробуйте молочный коктейль с мороженым и дробленым печеньем «Орео»",
+    "count": 0,
+    "status": true,
+    "categories": [
+      6
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 70,
+  "fields": {
+    "order": 70,
+    "name": "Классический молочный коктейль",
+    "description": "В мире так много коктейлей, но классика — вечна. Попробуйте наш молочный напиток с мороженым",
+    "count": 50,
+    "status": true,
+    "categories": [
+      6
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 71,
+  "fields": {
+    "order": 71,
+    "name": "Клубничный молочный коктейль",
+    "description": "Не важно, какое время года на улице, этот коктейль с клубничным концентратом вернет вас в лето с одного глотка",
+    "count": 40,
+    "status": true,
+    "categories": [
+      6
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 72,
+  "fields": {
+    "order": 72,
+    "name": "Кофе Карамельный капучино",
+    "description": "Если не шоколад, то карамель! А капучино с карамельным сиропом особенно хорош",
+    "count": 15,
+    "status": true,
+    "categories": [
+      7
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 73,
+  "fields": {
+    "order": 73,
+    "name": "Кофе Кокосовый латте",
+    "description": "Горячий напиток на основе эспрессо с увеличенной порцией молока и кокосовым сиропом",
+    "count": 50,
+    "status": true,
+    "categories": [
+      7
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 74,
+  "fields": {
+    "order": 74,
+    "name": "Кофе Ореховый латте",
+    "description": "Много молока и фундука. Уютный латте на основе эспрессо и орехового сиропа",
+    "count": 55,
+    "status": true,
+    "categories": [
+      7
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 75,
+  "fields": {
+    "order": 75,
+    "name": "Айс капучино",
+    "description": "Освежающий напиток для любителей кофе. В составе эспрессо, пломбир, молоко и бодрость на весь день",
+    "count": 20,
+    "status": true,
+    "categories": [
+      7
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 76,
+  "fields": {
+    "order": 76,
+    "name": "Какао",
+    "description": "Отправляемся в сладкое плавание в хорошей компании — горячее какао с молоком",
+    "count": 50,
+    "status": true,
+    "categories": [
+      8
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 77,
+  "fields": {
+    "order": 77,
+    "name": "Лимонад Арбузный лайм",
+    "description": "Cладость арбуза с освежающим лаймом и листьями мяты по фирменному рецепту",
+    "count": 55,
+    "status": true,
+    "categories": [
+      8
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 78,
+  "fields": {
+    "order": 78,
+    "name": "Добрый Кола Малина",
+    "description": null,
+    "count": 10,
+    "status": true,
+    "categories": [
+      8
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 79,
+  "fields": {
+    "order": 79,
+    "name": "Добрый Кола",
+    "description": null,
+    "count": 20,
+    "status": true,
+    "categories": [
+      8
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 80,
+  "fields": {
+    "order": 80,
+    "name": "Добрый Кола без сахара",
+    "description": null,
+    "count": 40,
+    "status": true,
+    "categories": [
+      8
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 81,
+  "fields": {
+    "order": 81,
+    "name": "Добрый Апельсин",
+    "description": null,
+    "count": 30,
+    "status": true,
+    "categories": [
+      8
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 82,
+  "fields": {
+    "order": 82,
+    "name": "Добрый Лимон-Лайм",
+    "description": null,
+    "count": 0,
+    "status": true,
+    "categories": [
+      8
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 83,
+  "fields": {
+    "order": 83,
+    "name": "Добрый Кола Ваниль",
+    "description": null,
+    "count": 30,
+    "status": true,
+    "categories": [
+      8
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 84,
+  "fields": {
+    "order": 84,
+    "name": "Rich Tea Черный с лимоном",
+    "description": null,
+    "count": 30,
+    "status": true,
+    "categories": [
+      8
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 85,
+  "fields": {
+    "order": 85,
+    "name": "Rich Tea Зеленый",
+    "description": null,
+    "count": 50,
+    "status": true,
+    "categories": [
+      8
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 86,
+  "fields": {
+    "order": 86,
+    "name": "Rich Tea Зеленый с манго",
+    "description": null,
+    "count": 60,
+    "status": true,
+    "categories": [
+      8
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 87,
+  "fields": {
+    "order": 87,
+    "name": "Апельсиновый сок Rich",
+    "description": null,
+    "count": 60,
+    "status": true,
+    "categories": [
+      8
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 88,
+  "fields": {
+    "order": 88,
+    "name": "Яблочный сок Rich",
+    "description": null,
+    "count": 50,
+    "status": true,
+    "categories": [
+      8
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 89,
+  "fields": {
+    "order": 89,
+    "name": "Вишневый нектар Rich",
+    "description": null,
+    "count": 30,
+    "status": true,
+    "categories": [
+      8
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 90,
+  "fields": {
+    "order": 90,
+    "name": "Вода BonaAqua негазированная",
+    "description": null,
+    "count": 50,
+    "status": true,
+    "categories": [
+      8
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 91,
+  "fields": {
+    "order": 91,
+    "name": "Морс Клюква",
+    "description": null,
+    "count": 50,
+    "status": true,
+    "categories": [
+      8,
+      13
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 92,
+  "fields": {
+    "order": 92,
+    "name": "Морс Черная смородина",
+    "description": "Для усиления ощущений от морса рекомендуем закрыть глаза и представить себя у бабушки в саду. Дизайн товара может отличаться",
+    "count": 59,
+    "status": true,
+    "categories": [
+      8,
+      13
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 93,
+  "fields": {
+    "order": 93,
+    "name": "Морс Вишня",
+    "description": "Напиток со вкусом ностальгии — летние каникулы, теплые ночи и уютные дачные посиделки. А еще никаких косточек. Дизайн товара может отличаться",
+    "count": 38,
+    "status": true,
+    "categories": [
+      8,
+      13
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 94,
+  "fields": {
+    "order": 94,
+    "name": "Таежный чай, 10 пакетиков",
+    "description": "На случай приятных разговоров и чтобы побыть наедине с собой. Одного саше хватит не только на чашку, но и на целый чайник",
+    "count": 40,
+    "status": true,
+    "categories": [
+      8
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 95,
+  "fields": {
+    "order": 95,
+    "name": "На случай приятных разговоров и чтобы побыть наедине с собой. Одного саше хватит не только на чашку,",
+    "description": "Хрустящие полоски тонкого теста, много-много начинки и фирменный пломбирный соус",
+    "count": 44,
+    "status": true,
+    "categories": [
+      9
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 96,
+  "fields": {
+    "order": 96,
+    "name": "Додобоны",
+    "description": "Когда сливочное встречается с пряным, получаются горячие булочки с корицей в фирменном пломбирном соусе",
+    "count": 40,
+    "status": true,
+    "categories": [
+      1,
+      9,
+      12
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 97,
+  "fields": {
+    "order": 97,
+    "name": "Бруслетики",
+    "description": "Это задорные сладкие рулетики, в которых закрутился микс из натуральной брусники и фирменного пломбирного соуса",
+    "count": 30,
+    "status": true,
+    "categories": [
+      9
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 98,
+  "fields": {
+    "order": 98,
+    "name": "Чизкейк Нью-Йорк с кокосом",
+    "description": "Это не классический творожный чизкейк, а похож! Это его нежный брат близнец с новым кокосовым вкусом",
+    "count": 30,
+    "status": true,
+    "categories": [
+      9
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 99,
+  "fields": {
+    "order": 99,
+    "name": "Чизкейк Нью-Йорк",
+    "description": "Мы перепробовали тысячу десертов и наконец нашли любимца гостей — нежнейший творожный чизкейк",
+    "count": 60,
+    "status": true,
+    "categories": [
+      9
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 100,
+  "fields": {
+    "order": 100,
+    "name": "Макарон манго-маракуйя",
+    "description": "Bon appétit! Знаменитый французский десерт со вкусом тропических фруктов",
+    "count": 50,
+    "status": true,
+    "categories": [
+      9
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 101,
+  "fields": {
+    "order": 101,
+    "name": "Чизкейк Банановый с шоколадным печеньем",
+    "description": "Солнечный снаружи и яркий по вкусу внутри. Летняя новинка — нежный чизкейк с бананом и шоколадным печеньем",
+    "count": 44,
+    "status": true,
+    "categories": [
+      9
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 102,
+  "fields": {
+    "order": 102,
+    "name": "Эклеры-мини с заварным кремом",
+    "description": "Три эклера — это много или мало? Мы считаем, в самый раз. Десерт с нежной начинкой для кофе и компаний",
+    "count": 55,
+    "status": true,
+    "categories": [
+      9
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 103,
+  "fields": {
+    "order": 103,
+    "name": "Шоколадный кукис",
+    "description": "На вид печенье как планета, а на вкус — шоколадная комета с глазурью",
+    "count": 49,
+    "status": true,
+    "categories": [
+      9
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 104,
+  "fields": {
+    "order": 104,
+    "name": "Фондан",
+    "description": "Четверо из пяти гостей говорят «Oh la la!», когда едят этот французский десерт с хрустящей корочкой и топленой шоколадной начинкой",
+    "count": 59,
+    "status": true,
+    "categories": [
+      9
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 105,
+  "fields": {
+    "order": 105,
+    "name": "Маффин Соленая карамель",
+    "description": "Раз откусить — навсегда полюбить! Оцените яркое сочетание соленой карамели и арахиса",
+    "count": 44,
+    "status": true,
+    "categories": [
+      9
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 106,
+  "fields": {
+    "order": 106,
+    "name": "Маффин Три шоколада",
+    "description": "Ну и кекс этот маффин! Он из натурального какао, а внутри — нежная начинка из кубиков белого и молочного шоколада",
+    "count": 66,
+    "status": true,
+    "categories": [
+      9
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 107,
+  "fields": {
+    "order": 107,
+    "name": "Сорбет Лимонный фреш",
+    "description": "Цитрусовая свежесть в стаканчике. Сладкий вкус с приятной кислинкой",
+    "count": 77,
+    "status": true,
+    "categories": [
+      9
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 108,
+  "fields": {
+    "order": 108,
+    "name": "Сорбет Клубничный гранат",
+    "description": "Охлаждающий дуэт сочных ягод и спелых фруктов",
+    "count": 24,
+    "status": true,
+    "categories": [
+      9
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 109,
+  "fields": {
+    "order": 109,
+    "name": "Медово-горчичный",
+    "description": "Фирменный медово-горчичный соус со жгучей сладостью для бортиков пиццы и горячих закусок, 25 г",
+    "count": 100,
+    "status": true,
+    "categories": [
+      1,
+      10
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 110,
+  "fields": {
+    "order": 110,
+    "name": "Сладкий чили",
+    "description": "Фирменный соус сладкий чили с легкой пряностью для бортиков пиццы и горячих закусок, 25 г",
+    "count": 29,
+    "status": true,
+    "categories": [
+      10
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 111,
+  "fields": {
+    "order": 111,
+    "name": "Сырный",
+    "description": "Фирменный соус со вкусом расплавленного сыра для бортиков пиццы и горячих закусок, 25 г",
+    "count": 49,
+    "status": true,
+    "categories": [
+      10,
+      12
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 112,
+  "fields": {
+    "order": 112,
+    "name": "Чесночный",
+    "description": "Фирменный соус с чесночным вкусом для бортиков пиццы и горячих закусок, 25 г",
+    "count": 39,
+    "status": true,
+    "categories": [
+      10
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 113,
+  "fields": {
+    "order": 113,
+    "name": "Барбекю",
+    "description": "Фирменный соус с дымным ароматом для бортиков пиццы и горячих закусок, 25 г",
+    "count": 49,
+    "status": true,
+    "categories": [
+      10
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 114,
+  "fields": {
+    "order": 114,
+    "name": "Малиновое варенье",
+    "description": "Идеально к сырникам, 25 г",
+    "count": 30,
+    "status": true,
+    "categories": [
+      10
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 115,
+  "fields": {
+    "order": 115,
+    "name": "Сгущёнка в стиках, 7 г",
+    "description": "Идеально к сырникам",
+    "count": 7,
+    "status": true,
+    "categories": [
+      10
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 116,
+  "fields": {
+    "order": 116,
+    "name": "Кофе в зернах - фирменная смесь",
+    "description": "Фирменная смесь кофейных зерен из 100% арабики. Кофейные зерна из Бразилии и Эфиопии обжаренные по специальному рецепту Додо. Идеально подходят для заваривания в домашних условиях",
+    "count": 57,
+    "status": true,
+    "categories": [
+      11
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 117,
+  "fields": {
+    "order": 117,
+    "name": "Додо Раскраска",
+    "description": "Чтобы обед был не только сытным, но и веселым",
+    "count": 55,
+    "status": true,
+    "categories": [
+      11,
+      13
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 118,
+  "fields": {
+    "order": 118,
+    "name": "Додо Клюв",
+    "description": "Если хочется перевоплощения",
+    "count": 54,
+    "status": true,
+    "categories": [
+      11
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 119,
+  "fields": {
+    "order": 119,
+    "name": "Додо Колпак",
+    "description": "Цвета разные, а эмоции одни – все варианты на высоте. Перед тем, как надевать, не забудьте его собрать",
+    "count": 30,
+    "status": true,
+    "categories": [
+      11,
+      13
+    ]
+  }
+}
+]
