@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
             name='Category',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('order', models.IntegerField(unique=True, verbose_name='Порядок отображения')),
+                ('order', models.IntegerField(unique=True, verbose_name='порядок отображения')),
                 ('name', models.CharField(max_length=100, verbose_name='название')),
                 ('status', models.BooleanField(choices=[(True, 'Активно'),
                  (False, 'Не активно')], default=True, verbose_name='статус')),

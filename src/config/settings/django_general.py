@@ -4,7 +4,6 @@ from pathlib import Path
 
 import environ
 
-
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 ROOT_DIR = BASE_DIR.parent
 
@@ -24,7 +23,7 @@ PROJECT_VERSION = pyproject_data['project']['version']
 SECRET_KEY = env('DJANGO_SECRET_KEY')
 DEBUG = env('DJANGO_DEBUG')
 
-ALLOWED_HOSTS: list[str] = ["*"]
+ALLOWED_HOSTS: list[str] = ['*']
 CORS_ALLOWED_ORIGINS = env('ALLOWED_ORIGINS').split(',')
 
 WSGI_APPLICATION = 'config.wsgi.application'
