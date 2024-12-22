@@ -39,4 +39,5 @@ DB_PASS = env('DB_PASS')
 REDIS_HOST = env('REDIS_HOST')
 REDIS_PORT = env('REDIS_PORT')
 REDIS_DB = env('REDIS_DB')
-CACHE_TIMEOUT = 60 * 60  # 1 час
+# CACHE_TIMEOUT = 60 * 60  # 1 час
+CACHE_TIMEOUT = 1  # 1 сек (чтобы не мешала разработке)

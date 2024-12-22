@@ -17,7 +17,8 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('order', models.IntegerField(verbose_name='порядок отображения')),
                 ('name', models.CharField(max_length=100, verbose_name='название')),
-                ('status', models.BooleanField(choices=[(True, 'Активно'), (False, 'Не активно')], default=True, verbose_name='статус')),
+                ('status', models.BooleanField(choices=[(True, 'Активно'),
+                 (False, 'Не активно')], default=True, verbose_name='статус')),
             ],
             options={
                 'verbose_name': 'категория',
@@ -34,7 +35,8 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(db_index=True, max_length=100, unique=True, verbose_name='название')),
                 ('description', models.CharField(blank=True, max_length=200, null=True, verbose_name='описание')),
                 ('count', models.PositiveIntegerField(verbose_name='количество')),
-                ('status', models.BooleanField(choices=[(True, 'Активно'), (False, 'Не активно')], default=True, verbose_name='статус')),
+                ('status', models.BooleanField(choices=[(True, 'Активно'),
+                 (False, 'Не активно')], default=True, verbose_name='статус')),
                 ('categories', models.ManyToManyField(to='catalog.category', verbose_name='категория')),
             ],
             options={

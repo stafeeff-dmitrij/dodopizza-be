@@ -4,7 +4,7 @@ from drf_spectacular.utils import extend_schema
 from rest_framework import viewsets
 
 from apps.catalog.models import Category
-from apps.catalog.serializers import CategorySerializer
+from apps.catalog.serializers.category import CategorySerializer
 from config.settings import CACHE_TIMEOUT
 
 

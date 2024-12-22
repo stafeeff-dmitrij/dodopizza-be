@@ -13,7 +13,7 @@ class ProductAdmin(admin.ModelAdmin):
     list_display_links = ('id', 'name')
     list_filter = ('categories', 'status')
     search_fields = ('name',)
-    search_help_text = "Поиск по названию"
+    search_help_text = 'Поиск по названию'
     list_editable = ('order', 'status')
     ordering = ('id',)
     list_per_page = 20
