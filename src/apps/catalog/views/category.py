@@ -1,3 +1,4 @@
+from django.db.models import Count
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
 from drf_spectacular.utils import extend_schema
@@ -12,8 +13,10 @@ from config.settings import CACHE_TIMEOUT
 @method_decorator(cache_page(CACHE_TIMEOUT), name='dispatch')
 class CategoryListView(viewsets.ModelViewSet):
     """
-    Возврат категорий товаров
+    Возврат категорий
     """
 
-    queryset = Category.objects.filter(status=True).order_by('order')
+    # только категории с товарами
+    queryset = Category.objects.annotate(num_products=Count('product')).filter(num_products__gt=0).order_by('order')
     serializer_class = CategorySerializer
+    pagination_class = None
