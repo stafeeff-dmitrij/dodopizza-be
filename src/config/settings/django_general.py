@@ -4,7 +4,7 @@ from pathlib import Path
 
 import environ
 
-BASE_DIR = Path(__file__).resolve().parent.parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent  # src
 ROOT_DIR = BASE_DIR.parent
 
 env = environ.Env(DEBUG=(bool, False), EXT_PORT=(str, ''), HOST=(str, 'localhost'))

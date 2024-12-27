@@ -1,0 +1,222 @@
+[
+{
+  "model": "catalog.ingredient",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "name": "Сырный бортик",
+    "price": 179,
+    "image": "apps/catalog/static/catalog/images/ingredients/сheese-side.png",
+    "status": true
+  }
+},
+{
+  "model": "catalog.ingredient",
+  "pk": 2,
+  "fields": {
+    "order": 2,
+    "name": "Пряная говядина",
+    "price": 119,
+    "image": "apps/catalog/static/catalog/images/ingredients/spicy-beef.png",
+    "status": true
+  }
+},
+{
+  "model": "catalog.ingredient",
+  "pk": 3,
+  "fields": {
+    "order": 3,
+    "name": "Моцарела",
+    "price": 79,
+    "image": "apps/catalog/static/catalog/images/ingredients/mozzarella.png",
+    "status": true
+  }
+},
+{
+  "model": "catalog.ingredient",
+  "pk": 4,
+  "fields": {
+    "order": 4,
+    "name": "Сыры чеддер и пармезан",
+    "price": 79,
+    "image": "apps/catalog/static/catalog/images/ingredients/cheddar-parmesan.png",
+    "status": true
+  }
+},
+{
+  "model": "catalog.ingredient",
+  "pk": 5,
+  "fields": {
+    "order": 5,
+    "name": "Острый перец халапенью",
+    "price": 59,
+    "image": "apps/catalog/static/catalog/images/ingredients/jalapeno-pepper.png",
+    "status": true
+  }
+},
+{
+  "model": "catalog.ingredient",
+  "pk": 6,
+  "fields": {
+    "order": 6,
+    "name": "Нежный цыпленок",
+    "price": 79,
+    "image": "apps/catalog/static/catalog/images/ingredients/tender-chicken.png",
+    "status": true
+  }
+},
+{
+  "model": "catalog.ingredient",
+  "pk": 7,
+  "fields": {
+    "order": 7,
+    "name": "Шамньоны",
+    "price": 59,
+    "image": "apps/catalog/static/catalog/images/ingredients/chamignons.png",
+    "status": true
+  }
+},
+{
+  "model": "catalog.ingredient",
+  "pk": 8,
+  "fields": {
+    "order": 8,
+    "name": "Ветчина",
+    "price": 79,
+    "image": "apps/catalog/static/catalog/images/ingredients/ham.png",
+    "status": true
+  }
+},
+{
+  "model": "catalog.ingredient",
+  "pk": 9,
+  "fields": {
+    "order": 9,
+    "name": "Пикантная пепперони",
+    "price": 79,
+    "image": "apps/catalog/static/catalog/images/ingredients/spicy-pepperoni.png",
+    "status": true
+  }
+},
+{
+  "model": "catalog.ingredient",
+  "pk": 10,
+  "fields": {
+    "order": 10,
+    "name": "Острая чоризо",
+    "price": 79,
+    "image": "apps/catalog/static/catalog/images/ingredients/spicy-chorizo.png",
+    "status": true
+  }
+},
+{
+  "model": "catalog.ingredient",
+  "pk": 11,
+  "fields": {
+    "order": 11,
+    "name": "Маринованные огурчики",
+    "price": 59,
+    "image": "apps/catalog/static/catalog/images/ingredients/pickled-cucumbers.png",
+    "status": true
+  }
+},
+{
+  "model": "catalog.ingredient",
+  "pk": 12,
+  "fields": {
+    "order": 12,
+    "name": "Свежие томаты",
+    "price": 59,
+    "image": "apps/catalog/static/catalog/images/ingredients/fresh-tomatoes.png",
+    "status": true
+  }
+},
+{
+  "model": "catalog.ingredient",
+  "pk": 13,
+  "fields": {
+    "order": 13,
+    "name": "Красный лук",
+    "price": 59,
+    "image": "apps/catalog/static/catalog/images/ingredients/red-onion.png",
+    "status": true
+  }
+},
+{
+  "model": "catalog.ingredient",
+  "pk": 14,
+  "fields": {
+    "order": 14,
+    "name": "Сочные ананасы",
+    "price": 59,
+    "image": "apps/catalog/static/catalog/images/ingredients/juicy-pineapples.png",
+    "status": true
+  }
+},
+{
+  "model": "catalog.ingredient",
+  "pk": 15,
+  "fields": {
+    "order": 15,
+    "name": "Итальянские травы",
+    "price": 39,
+    "image": "apps/catalog/static/catalog/images/ingredients/italian-herbs.png",
+    "status": true
+  }
+},
+{
+  "model": "catalog.ingredient",
+  "pk": 16,
+  "fields": {
+    "order": 16,
+    "name": "Сладкий перец",
+    "price": 59,
+    "image": "apps/catalog/static/catalog/images/ingredients/sweet-pepper.png",
+    "status": true
+  }
+},
+{
+  "model": "catalog.ingredient",
+  "pk": 17,
+  "fields": {
+    "order": 17,
+    "name": "Кубики брынзы",
+    "price": 79,
+    "image": "apps/catalog/static/catalog/images/ingredients/cheese-cubes.png",
+    "status": true
+  }
+},
+{
+  "model": "catalog.ingredient",
+  "pk": 18,
+  "fields": {
+    "order": 18,
+    "name": "Митболы",
+    "price": 79,
+    "image": "apps/catalog/static/catalog/images/ingredients/meatballs.png",
+    "status": true
+  }
+},
+{
+  "model": "catalog.ingredient",
+  "pk": 19,
+  "fields": {
+    "order": 19,
+    "name": "Баварские колбаски",
+    "price": 129,
+    "image": "apps/catalog/static/catalog/images/ingredients/bavarian-sausages.png",
+    "status": true
+  }
+},
+{
+  "model": "catalog.ingredient",
+  "pk": 20,
+  "fields": {
+    "order": 20,
+    "name": "Креветки",
+    "price": 199,
+    "image": "apps/catalog/static/catalog/images/ingredients/shrimp.png",
+    "status": true
+  }
+}
+]

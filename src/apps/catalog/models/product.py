@@ -1,7 +1,7 @@
 from django.db import models
 
 from apps.catalog.constants import STATUS_CHOICES
-from apps.catalog.models import Category
+from apps.catalog.models.category import Category
 
 
 class Product(models.Model):
@@ -13,7 +13,7 @@ class Product(models.Model):
     name = models.CharField(max_length=100, verbose_name='название', unique=True, db_index=True)
     description = models.CharField(max_length=200, verbose_name='описание', null=True, blank=True)
     count = models.PositiveIntegerField(verbose_name='количество')
-    categories = models.ManyToManyField(Category, verbose_name='категория')
+    categories = models.ManyToManyField(Category, verbose_name='категории')
     status = models.BooleanField(choices=STATUS_CHOICES, default=True, verbose_name='статус')
 
     def __str__(self) -> str:
