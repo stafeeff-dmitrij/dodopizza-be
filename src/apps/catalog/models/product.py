@@ -1,20 +1,21 @@
 from django.db import models
 
-from apps.catalog.constants import STATUS_CHOICES
+from apps.catalog.models.base import BaseModel
 from apps.catalog.models.category import Category
+from apps.catalog.models.ingredient import Ingredient
 
 
-class Product(models.Model):
+class Product(BaseModel):
     """
     Товары
     """
 
-    order = models.PositiveIntegerField(verbose_name='порядок отображения')
     name = models.CharField(max_length=100, verbose_name='название', unique=True, db_index=True)
     description = models.CharField(max_length=200, verbose_name='описание', null=True, blank=True)
     count = models.PositiveIntegerField(verbose_name='количество')
+
     categories = models.ManyToManyField(Category, verbose_name='категории')
-    status = models.BooleanField(choices=STATUS_CHOICES, default=True, verbose_name='статус')
+    ingredients = models.ManyToManyField(Ingredient, verbose_name='ингредиенты')
 
     def __str__(self) -> str:
         return self.name

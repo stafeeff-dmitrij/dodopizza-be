@@ -1,16 +1,14 @@
 from django.db import models
 
-from apps.catalog.constants import STATUS_CHOICES
+from apps.catalog.models.base import BaseModel
 
 
-class Category(models.Model):
+class Category(BaseModel):
     """
     Категории товаров
     """
 
-    order = models.IntegerField(verbose_name='порядок отображения')
     name = models.CharField(max_length=100, verbose_name='название')
-    status = models.BooleanField(choices=STATUS_CHOICES, default=True, verbose_name='статус')
 
     class Meta:
         db_table = 'categories'

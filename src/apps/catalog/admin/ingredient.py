@@ -9,7 +9,7 @@ class IngredientAdmin(admin.ModelAdmin):
     Ингредиенты
     """
 
-    list_display = ('id', 'order', 'name', 'price', 'status')
+    list_display = ('id', 'order', 'name', 'status')
     list_display_links = ('id', 'name')
     list_filter = ('status',)
     search_fields = ('name',)
@@ -17,3 +17,18 @@ class IngredientAdmin(admin.ModelAdmin):
     list_editable = ('order', 'status')
     ordering = ('order',)
     list_per_page = 20
+
+    fieldsets = [
+        (
+            'Основное',
+            {
+                'fields': ('name', 'image')
+            }
+        ),
+        (
+            'Прочее',
+            {
+                'fields': ('order', 'status')
+            }
+        )
+    ]
