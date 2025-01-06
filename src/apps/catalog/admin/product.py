@@ -10,10 +10,10 @@ class ProductAdmin(admin.ModelAdmin):
     Товары
     """
 
-    list_display = ('id', 'order', 'name', 'short_description', 'count',
+    list_display = ('id', 'order', 'name', 'short_description', 'count', 'parent_category',
                     'all_categories', 'default_ingredients', 'status')
     list_display_links = ('id', 'name')
-    list_filter = ('categories', 'status', ProductEndedFilter)
+    list_filter = ('parent_category', 'categories', 'status', ProductEndedFilter)
     search_fields = ('name',)
     search_help_text = 'Поиск по названию'
     list_editable = ('order', 'status')
@@ -49,7 +49,7 @@ class ProductAdmin(admin.ModelAdmin):
         (
             'Основное',
             {
-                'fields': ('name', 'description', 'count', 'categories')
+                'fields': ('name', 'description', 'count', 'parent_category', 'categories')
             }
         ),
         (

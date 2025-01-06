@@ -14,8 +14,10 @@ class Product(BaseModel):
     description = models.CharField(max_length=200, verbose_name='описание', null=True, blank=True)
     count = models.PositiveIntegerField(verbose_name='количество')
 
-    categories = models.ManyToManyField(Category, verbose_name='категории')
-    ingredients = models.ManyToManyField(Ingredient, verbose_name='ингредиенты')
+    parent_category = models.ForeignKey(Category, verbose_name='основная категория',
+                                        on_delete=models.CASCADE, related_name='product')
+    categories = models.ManyToManyField(Category, verbose_name='категории', related_name='products')
+    ingredients = models.ManyToManyField(Ingredient, verbose_name='ингредиенты', blank=True)
 
     def __str__(self) -> str:
         return self.name

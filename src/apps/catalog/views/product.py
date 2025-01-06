@@ -5,7 +5,11 @@ from rest_framework import generics, mixins, viewsets
 
 from apps.catalog.models import Category, Product
 from apps.catalog.pagination import CatalogPagination
-from apps.catalog.serializers.product import AllProductsSerializer, ProductSerializer
+from apps.catalog.serializers.product import (
+    AllProductsSerializer,
+    ProductDetailSerializer,
+    ProductSerializer,
+)
 from config.settings import CACHE_TIMEOUT
 
 
@@ -51,3 +55,14 @@ class ProductsFilterListView(generics.GenericAPIView, mixins.ListModelMixin):
     )
     def get(self, request):
         return self.list(request)
+
+
+@extend_schema(tags=['Каталог'])
+@method_decorator(cache_page(CACHE_TIMEOUT), name='dispatch')
+class ProductDetailView(generics.RetrieveAPIView):
+    """
+    Возврат детальной информации о товаре
+    """
+
+    queryset = Product.objects.all()
+    serializer_class = ProductDetailSerializer

@@ -14,8 +14,8 @@ class PizzaTypeChoice(models.TextChoices):
     """
     Типы теста пицц
     """
-    traditional = 'traditional', 'традиционное'
-    slim = 'slim', 'тонкое'
+    traditional = 'traditional', 'Традиционное'
+    slim = 'slim', 'Тонкое'
 
 
 class ProductCountChoice(models.IntegerChoices):
@@ -27,8 +27,8 @@ class ProductCountChoice(models.IntegerChoices):
     three = 3, '3 шт'
     four = 4, '4 шт'
     five = 5, '5 шт'
-    ten = 10, '10 шт'
     eight = 8, '8 шт'
+    ten = 10, '10 шт'
     sixteen = 16, '16 шт'
 
 
@@ -36,9 +36,9 @@ class PortionSizeChoice(models.TextChoices):
     """
     Размеры порций
     """
-    small = 'small', 'маленькая'
-    average = 'average', 'средняя'
-    big = 'big', 'большая'
+    small = 'small', 'Маленькая'
+    average = 'average', 'Средняя'
+    big = 'big', 'Большая'
 
 
 class DrinkVolumeChoice(models.TextChoices):
@@ -63,3 +63,10 @@ STATUS_CHOICES = [
     (True, 'Активно'),
     (False, 'Не активно'),
 ]
+
+
+class CategoryType(models.IntegerChoices):
+    """
+    id категорий
+    """
+    pizza = 2, 'Пицца'

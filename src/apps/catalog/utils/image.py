@@ -25,3 +25,12 @@ def get_ingredient_image_path(instance, filename: str) -> str:
     return os.path.join(
         IMAGES_PATH, 'ingredients', filename
     )
+
+
+def get_full_url_image(image_path: str) -> str:
+    """
+    Возврат полного URL-адреса изображения
+    """
+    # TODO Подставлять хост из переменных окружения в зависимости от дев и прод окружения
+    host = 'http://localhost:8000'
+    return f'{host}{image_path}'
