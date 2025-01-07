@@ -1,5 +1,6 @@
 # ДОДО ПИЦЦА
 
+## Команды
 ### Pre-commit
 
 В проекте используются Git-хуки для автоматической проверки и форматирования кода перед созданием коммита.
@@ -25,6 +26,28 @@
    cz commit
    ```
 
+### Миграции
+Экспорт категорий:
+   ```
+   python manage.py dumpdata catalog.category --indent 2 > ../fixtures/categories.json
+   ```
+Экспорт ингредиентов:
+   ```
+   python manage.py dumpdata catalog.ingredient --indent 2 > ../fixtures/ingredients.json
+   ```
+Экспорт товаров:
+   ```
+   python manage.py dumpdata catalog.product --indent 2 > ../fixtures/products.json
+   ```
+Экспорт вариаций:
+   ```
+   python manage.py dumpdata catalog.variation catalog.variationtoingredient --indent 2 > ../fixtures/variations.json
+   ```
+Импорт категорий:
+   ```
+   python manage.py loaddata ../fixtures/categories.json
+   ```
+
 ## Сделать
 - Смена статусов категорий (включая всех товаров в этих категориях, если товар не принадлежит другим активным категориям) и товаров
 
@@ -32,6 +55,7 @@
 - Сделать автоматический git add . при команде cz commit
 - При пуше в мастер автосборка на сервере с кнопкой ручного деплоя как в гитлабе
 - Разобраться почему при запросе категорий делается много лишних запросов к БД
+- При удалении записи из БД также автоматом удалять картинку
 
 ### Не добавленные товары
 - Среди новинок не добавлена "3 пиццы 35 см"

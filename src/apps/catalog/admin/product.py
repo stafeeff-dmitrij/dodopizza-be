@@ -17,7 +17,7 @@ class ProductAdmin(admin.ModelAdmin):
     search_fields = ('name',)
     search_help_text = 'Поиск по названию'
     list_editable = ('order', 'status')
-    ordering = ('order',)
+    ordering = ('parent_category', 'order')
     filter_horizontal = ('categories', 'ingredients',)
     list_per_page = 20
 

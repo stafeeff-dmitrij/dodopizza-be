@@ -4,8 +4,8 @@
   "pk": 1,
   "fields": {
     "order": 1,
-    "name": "Новинки",
-    "status": true
+    "status": true,
+    "name": "Новинки"
   }
 },
 {
@@ -13,8 +13,8 @@
   "pk": 2,
   "fields": {
     "order": 2,
-    "name": "Пиццы",
-    "status": true
+    "status": true,
+    "name": "Пиццы"
   }
 },
 {
@@ -22,8 +22,8 @@
   "pk": 3,
   "fields": {
     "order": 3,
-    "name": "Комбо",
-    "status": true
+    "status": true,
+    "name": "Комбо"
   }
 },
 {
@@ -31,8 +31,8 @@
   "pk": 4,
   "fields": {
     "order": 4,
-    "name": "Закуски",
-    "status": true
+    "status": true,
+    "name": "Закуски"
   }
 },
 {
@@ -40,8 +40,8 @@
   "pk": 5,
   "fields": {
     "order": 5,
-    "name": "Завтрак",
-    "status": true
+    "status": true,
+    "name": "Завтрак"
   }
 },
 {
@@ -49,8 +49,8 @@
   "pk": 6,
   "fields": {
     "order": 6,
-    "name": "Коктейли",
-    "status": true
+    "status": true,
+    "name": "Коктейли"
   }
 },
 {
@@ -58,8 +58,8 @@
   "pk": 7,
   "fields": {
     "order": 7,
-    "name": "Кофе",
-    "status": true
+    "status": true,
+    "name": "Кофе"
   }
 },
 {
@@ -67,8 +67,8 @@
   "pk": 8,
   "fields": {
     "order": 8,
-    "name": "Напитки",
-    "status": true
+    "status": true,
+    "name": "Напитки"
   }
 },
 {
@@ -76,8 +76,8 @@
   "pk": 9,
   "fields": {
     "order": 9,
-    "name": "Десерты",
-    "status": true
+    "status": true,
+    "name": "Десерты"
   }
 },
 {
@@ -85,8 +85,8 @@
   "pk": 10,
   "fields": {
     "order": 10,
-    "name": "Соусы",
-    "status": true
+    "status": true,
+    "name": "Соусы"
   }
 },
 {
@@ -94,8 +94,8 @@
   "pk": 11,
   "fields": {
     "order": 11,
-    "name": "Другие товары",
-    "status": true
+    "status": true,
+    "name": "Другие товары"
   }
 },
 {
@@ -103,19 +103,17 @@
   "pk": 12,
   "fields": {
     "order": 12,
-    "name": "Хиты",
-    "status": true
+    "status": true,
+    "name": "Хиты"
   }
 },
-
-
 {
   "model": "catalog.category",
   "pk": 13,
   "fields": {
     "order": 13,
-    "name": "Любят дети",
-    "status": true
+    "status": true,
+    "name": "Любят дети"
   }
 }
 ]

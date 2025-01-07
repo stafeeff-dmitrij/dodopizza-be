@@ -23,7 +23,7 @@ class VariationSerializer(serializers.ModelSerializer):
         """
         Возврат ингредиентов
         """
-        records = obj.variationtoingredient_set.filter(ingredient__status=True).order_by('ingredient__order')
+        records = obj.variationtoingredient_set.filter(ingredient__status=True).order_by('order')
         serializer = IngredientVariationSerializer(records, many=True)
 
         return serializer.data
@@ -31,5 +31,6 @@ class VariationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Variation
         fields = (
-            'id', 'price', 'image', 'pizza_size', 'pizza_type', 'count', 'volume', 'mass', 'ingredients',
+            'id', 'price', 'image', 'pizza_size', 'pizza_type', 'count', 'portion_size', 'volume', 'weight',
+            'mass', 'ingredients',
         )

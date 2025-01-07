@@ -9,6 +9,7 @@ class VariationToIngredientInline(admin.TabularInline):
     """
     model = VariationToIngredient
     extra = 0
+    ordering = ('order',)
     verbose_name = 'Ингредиент'
     verbose_name_plural = 'Ингредиенты'
 
@@ -22,11 +23,12 @@ class VariationAdmin(admin.ModelAdmin):
     list_display = ('id', 'order', 'product', 'pizza_size', 'pizza_type', 'count', 'portion_size',
                     'volume', 'weight', 'mass', 'price', 'ingredients_count', 'status')
     list_display_links = ('id', 'product')
-    list_filter = ('product__categories', 'pizza_size', 'pizza_type', 'count', 'portion_size', 'volume', 'weight')
+    list_filter = ('product__parent_category', 'product__categories', 'pizza_size',
+                   'pizza_type', 'count', 'portion_size', 'volume', 'weight')
     search_fields = ('product__name',)
     search_help_text = 'Поиск по названию товара'
     list_editable = ('order', 'status')
-    ordering = ('order',)
+    ordering = ('product__parent_category', 'product', 'order')
     list_per_page = 20
 
     fieldsets = [
@@ -52,10 +54,11 @@ class VariationAdmin(admin.ModelAdmin):
 
     inlines = [VariationToIngredientInline]
 
-    def ingredients_count(self, obj):
+    def ingredients_count(self, obj) -> int | str:
         """
         Кол-во ингредиентов
         """
-        return obj.ingredients.all().count()
+        ingredients_count = obj.ingredients.all().count()
+        return ingredients_count if ingredients_count else '-'
 
     ingredients_count.short_description = 'Ингредиенты'
