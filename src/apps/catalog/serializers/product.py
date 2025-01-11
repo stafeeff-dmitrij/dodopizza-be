@@ -16,15 +16,15 @@ class ProductSerializer(serializers.ModelSerializer):
     Схема для вывода данных по товару
     """
 
-    image = serializers.SerializerMethodField('get_image')
-    min_price = serializers.SerializerMethodField('get_min_price')
-    variation_have = serializers.SerializerMethodField('get_variation_have')
+    image = serializers.SerializerMethodField()
+    min_price = serializers.SerializerMethodField()
+    variation_have = serializers.SerializerMethodField()
 
     def get_image(self, obj) -> str | None:
         """
         Возврат изображения товара
         """
-        variations = obj.variation_set.all().order_by('order')
+        variations = obj.variations.order_by('order')
 
         if obj.parent_category_id == CategoryType.pizza:
             # для пицц возврат картинки по умолчанию 30 см, традиционное
@@ -42,7 +42,7 @@ class ProductSerializer(serializers.ModelSerializer):
         """
         Возврат минимальной цены товара
         """
-        variation = obj.variation_set.order_by('price').first()
+        variation = obj.variations.order_by('price').first()
 
         if variation:
             return variation.price
@@ -51,8 +51,7 @@ class ProductSerializer(serializers.ModelSerializer):
         """
         Возврат флага о наличии вариаций у товара
         """
-        variation_count = obj.variation_set.count()
-        return variation_count > 1
+        return obj.variations.count() > 1
 
     class Meta:
         model = Product
@@ -70,7 +69,7 @@ class AllProductsSerializer(serializers.ModelSerializer):
         """
         Возврат активных товаров
         """
-        active_products = obj.products.filter(status=True).order_by('order')[:12]
+        active_products = obj.products.prefetch_related('variations').filter(status=True).order_by('order')[:12]
         serializer = ProductSerializer(active_products, many=True)
 
         return serializer.data
@@ -86,10 +85,10 @@ class ProductDetailSerializer(serializers.ModelSerializer):
     """
 
     category_id = serializers.IntegerField(source='parent_category_id')
-    default_ingredients = serializers.SerializerMethodField('get_ingredients')
-    variations = serializers.SerializerMethodField('get_variations')
+    default_ingredients = serializers.SerializerMethodField()
+    variations = serializers.SerializerMethodField()
 
-    def get_ingredients(self, obj) -> float:
+    def get_default_ingredients(self, obj) -> float:
         """
         Возврат дефолтных ингредиентов товара
         """
@@ -102,7 +101,7 @@ class ProductDetailSerializer(serializers.ModelSerializer):
         """
         Возврат вариаций товара
         """
-        variations = obj.variation_set.filter(status=True).order_by('order')
+        variations = obj.variations.filter(status=True).order_by('order')
         serializer = VariationSerializer(variations, many=True)
 
         return serializer.data

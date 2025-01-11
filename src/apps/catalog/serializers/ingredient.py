@@ -11,7 +11,7 @@ class IngredientVariationSerializer(serializers.ModelSerializer):
 
     id = serializers.IntegerField(source='ingredient_id')
     name = serializers.CharField(source='ingredient.name')
-    image = serializers.SerializerMethodField('get_image')
+    image = serializers.SerializerMethodField()
 
     def get_image(self, obj) -> str | None:
         """

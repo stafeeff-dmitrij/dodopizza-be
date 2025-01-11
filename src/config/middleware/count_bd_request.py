@@ -15,8 +15,10 @@ class CheckCountDbRequestMiddleware(MiddlewareMixin):
     def process_response(self, request, response):
         if settings.DEBUG and request.resolver_match and request.resolver_match.url_name not in ['schema', 'swagger-ui']:
             count_requests = len(connection.queries)
-            if count_requests > 0:
-                logger.debug(f'Запрос: {request.path}. Кол-во запросов к БД: {count_requests}')
-                # logger.debug(f'Запросы к БД: {connection.queries}')
+            # Исключаем 2 автоматических запроса Django: проверка сессии и авторизации пользователя
+            if count_requests > 2:
+                logger.debug(f'Запрос: {request.path}. Кол-во запросов к БД: {count_requests - 2}')
+                # for count, query in enumerate(connection.queries[2:], 1):
+                #     logger.warning(f'{count}: {query}')
 
         return response

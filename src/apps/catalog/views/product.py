@@ -37,14 +37,19 @@ class ProductsFilterListView(generics.GenericAPIView, mixins.ListModelMixin):
 
     def get_queryset(self) -> list[Product]:
         """
-        Фильтрация товаров по номеру категории
+        Фильтрация товаров
         """
+        # TODO В будущем вынести логику фильтрации как в ЛКСЭ при фильтрации аналогов
         category_id = self.request.query_params.get('category_id')
+        search = self.request.query_params.get('search')
 
         if category_id:
-            products = Product.objects.filter(categories__id=category_id).order_by('order')
+            products = Product.objects.prefetch_related('variations').filter(
+                categories__id=category_id).order_by('order')
+        elif search:
+            products = Product.objects.prefetch_related('variations').filter(name__icontains=search).order_by('order')
         else:
-            products = Product.objects.all().order_by('order')
+            products = Product.objects.prefetch_related('variations').all().order_by('order')
 
         return products
 

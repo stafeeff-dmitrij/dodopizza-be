@@ -32,7 +32,7 @@ class Variation(BaseModel):
     weight = models.CharField(verbose_name='масса, кг', choices=WeightChoice, blank=True, null=True)
     mass = models.IntegerField(verbose_name='масса, г', blank=True, null=True)
 
-    product = models.ForeignKey(Product, verbose_name='товар', on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, verbose_name='товар', on_delete=models.CASCADE, related_name='variations')
     ingredients = models.ManyToManyField(Ingredient, verbose_name='доп.ингредиенты', through='VariationToIngredient')
 
     def __str__(self) -> str:

@@ -8,5 +8,5 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
-    'config.middleware.count_bd_request.CheckCountDbRequestMiddleware',
+    # 'config.middleware.count_bd_request.CheckCountDbRequestMiddleware', # проверка кол-ва запросов к БД
 ]
