@@ -9,9 +9,9 @@ class IngredientAdmin(admin.ModelAdmin):
     Ингредиенты
     """
 
-    list_display = ('id', 'order', 'name', 'status')
-    list_display_links = ('id', 'name')
-    list_filter = ('status',)
+    list_display = ('id', 'name', 'category', 'order', 'status')
+    list_display_links = ('name',)
+    list_filter = ('category', 'status')
     search_fields = ('name',)
     search_help_text = 'Поиск по названию'
     list_editable = ('order', 'status')
@@ -22,7 +22,7 @@ class IngredientAdmin(admin.ModelAdmin):
         (
             'Основное',
             {
-                'fields': ('name', 'image')
+                'fields': ('name', 'category', 'image')
             }
         ),
         (

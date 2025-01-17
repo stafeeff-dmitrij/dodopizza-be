@@ -45,11 +45,12 @@ class ProductsFilterListView(generics.GenericAPIView, mixins.ListModelMixin):
 
         if category_id:
             products = Product.objects.prefetch_related('variations').filter(
-                categories__id=category_id).order_by('order')
+                categories__id=category_id, status=True).order_by('order')
         elif search:
-            products = Product.objects.prefetch_related('variations').filter(name__icontains=search).order_by('order')
+            products = Product.objects.prefetch_related('variations').filter(
+                name__icontains=search, status=True).order_by('order')
         else:
-            products = Product.objects.prefetch_related('variations').all().order_by('order')
+            products = Product.objects.prefetch_related('variations').filter(status=True).order_by('order')
 
         return products
 
@@ -69,5 +70,5 @@ class ProductDetailView(generics.RetrieveAPIView):
     Возврат детальной информации о товаре
     """
 
-    queryset = Product.objects.all()
+    queryset = Product.objects.filter(status=True)
     serializer_class = ProductDetailSerializer

@@ -20,9 +20,9 @@ class VariationAdmin(admin.ModelAdmin):
     Вариации товаров
     """
 
-    list_display = ('id', 'order', 'product', 'pizza_size', 'pizza_type', 'count', 'portion_size',
-                    'volume', 'weight', 'mass', 'price', 'ingredients_count', 'status')
-    list_display_links = ('id', 'product')
+    list_display = ('id', 'product', 'pizza_size', 'pizza_type', 'count', 'portion_size',
+                    'volume', 'weight', 'mass', 'price', 'ingredients_count', 'order', 'status')
+    list_display_links = ('product',)
     list_filter = ('product__parent_category', 'product__categories', 'pizza_size',
                    'pizza_type', 'count', 'portion_size', 'volume', 'weight')
     search_fields = ('product__name',)

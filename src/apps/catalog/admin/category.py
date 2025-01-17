@@ -14,8 +14,8 @@ class CategoryAdmin(admin.ModelAdmin):
     Категории товаров
     """
 
-    list_display = ('id', 'order', 'name', 'status')
-    list_display_links = ('id', 'name')
+    list_display = ('id', 'name', 'order', 'status')
+    list_display_links = ('name',)
     list_filter = ('status',)
     search_fields = ('name',)
     search_help_text = 'Поиск по названию'

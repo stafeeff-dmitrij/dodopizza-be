@@ -10,9 +10,9 @@ class ProductAdmin(admin.ModelAdmin):
     Товары
     """
 
-    list_display = ('id', 'order', 'name', 'short_description', 'count', 'parent_category',
-                    'all_categories', 'default_ingredients', 'status')
-    list_display_links = ('id', 'name')
+    list_display = ('id', 'name', 'short_description', 'count', 'parent_category',
+                    'all_categories', 'default_ingredients', 'order', 'status')
+    list_display_links = ('name',)
     list_filter = ('parent_category', 'categories', 'status', ProductEndedFilter)
     search_fields = ('name',)
     search_help_text = 'Поиск по названию'
