@@ -70,3 +70,11 @@ class CategoryType(models.IntegerChoices):
     id категорий
     """
     pizza = 2, 'Пицца'
+
+
+class SortTypeProduct:
+    """
+    Типы сортировок товаров
+    """
+    PRICE = 'price'
+    NAME = 'name'

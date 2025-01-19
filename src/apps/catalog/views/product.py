@@ -10,6 +10,7 @@ from apps.catalog.serializers.product import (
     ProductDetailSerializer,
     ProductSerializer,
 )
+from apps.catalog.services import FilterAndSortProductServices
 from config.settings import CACHE_TIMEOUT
 
 
@@ -37,26 +38,21 @@ class ProductsFilterListView(generics.GenericAPIView, mixins.ListModelMixin):
 
     def get_queryset(self) -> list[Product]:
         """
-        Фильтрация товаров
+        Фильтрация и сортировка товаров
         """
-        # TODO В будущем вынести логику фильтрации как в ЛКСЭ при фильтрации аналогов
-        category_id = self.request.query_params.get('category_id')
-        search = self.request.query_params.get('search')
-
-        if category_id:
-            products = Product.objects.prefetch_related('variations').filter(
-                categories__id=category_id, status=True).order_by('order')
-        elif search:
-            products = Product.objects.prefetch_related('variations').filter(
-                name__icontains=search, status=True).order_by('order')
-        else:
-            products = Product.objects.prefetch_related('variations').filter(status=True).order_by('order')
+        params = self.request.query_params
+        products = FilterAndSortProductServices.get_products(params=params)
 
         return products
 
     @extend_schema(
         parameters=[
+            OpenApiParameter(name='search', description='Поиск по названию', required=False, type=str),
             OpenApiParameter(name='category_id', description='id категории', required=False, type=int),
+            OpenApiParameter(name='min_price', description='Минимальная цена', required=False, type=int),
+            OpenApiParameter(name='max_price', description='Максимальная цена', required=False, type=int),
+            OpenApiParameter(name='ingredients', description='Ингредиенты', required=False, type=str),
+            OpenApiParameter(name='sort', description='Сортировка: name, price', required=False, type=str),
         ],
     )
     def get(self, request):
