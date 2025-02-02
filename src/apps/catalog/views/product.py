@@ -52,6 +52,7 @@ class ProductsFilterListView(generics.GenericAPIView, mixins.ListModelMixin):
             OpenApiParameter(name='min_price', description='Минимальная цена', required=False, type=int),
             OpenApiParameter(name='max_price', description='Максимальная цена', required=False, type=int),
             OpenApiParameter(name='ingredients', description='Ингредиенты', required=False, type=str),
+            OpenApiParameter(name='in_have', description='Только товары в наличии', required=False, type=bool),
             OpenApiParameter(name='sort', description='Сортировка: name, price', required=False, type=str),
         ],
     )

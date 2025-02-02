@@ -1,5 +1,3 @@
-import logging
-
 from rest_framework import serializers
 
 from apps.catalog.constants import CategoryType, PizzaSizeChoice, PizzaTypeChoice
@@ -7,8 +5,6 @@ from apps.catalog.models import Category, Product
 from apps.catalog.serializers.ingredient import IngredientProductSerializer
 from apps.catalog.serializers.variation import VariationSerializer
 from apps.catalog.utils.image import get_full_url_image
-
-logger = logging.getLogger(__name__)
 
 
 class ProductSerializer(serializers.ModelSerializer):
@@ -18,7 +14,7 @@ class ProductSerializer(serializers.ModelSerializer):
 
     image = serializers.SerializerMethodField()
     min_price = serializers.SerializerMethodField()
-    variation_have = serializers.SerializerMethodField()
+    variations_have = serializers.SerializerMethodField()
 
     def get_image(self, obj) -> str | None:
         """
@@ -47,7 +43,7 @@ class ProductSerializer(serializers.ModelSerializer):
         if variation:
             return variation.price
 
-    def get_variation_have(self, obj) -> bool:
+    def get_variations_have(self, obj) -> bool:
         """
         Возврат флага о наличии вариаций у товара
         """
@@ -55,7 +51,7 @@ class ProductSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Product
-        fields = ('id', 'name', 'description', 'image', 'min_price', 'variation_have', 'count')
+        fields = ('id', 'name', 'description', 'image', 'min_price', 'variations_have', 'count')
 
 
 class AllProductsSerializer(serializers.ModelSerializer):

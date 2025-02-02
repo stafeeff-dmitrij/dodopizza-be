@@ -22,6 +22,7 @@ class FilterAndSortProductServices:
         'ingredients': 'variations__ingredients__id__in',
         'min_price': 'min_price__gte',  # поле min_price добавлено через annotate!
         'max_price': 'min_price__lte',  # поле min_price добавлено через annotate!
+        'in_have': 'count__gt'
     }
 
     @classmethod
@@ -76,6 +77,13 @@ class FilterAndSortProductServices:
 
             if ingredients:
                 filter_params['ingredients'] = ingredients.split(',')  # список id ингредиентов
+
+            in_have = filter_params.get('in_have', 'false').lower() == 'true'  # приводим к boolean
+
+            if in_have:
+                filter_params['in_have'] = 1  # минимальное кол-во товара в наличии для фильтрации
+            else:
+                filter_params.pop('in_have', None)
 
             products = FilterAndSortProductServices.filter(params=filter_params)
         else:
