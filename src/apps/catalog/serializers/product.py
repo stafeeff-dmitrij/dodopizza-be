@@ -1,10 +1,13 @@
+import logging
+
 from rest_framework import serializers
 
-from apps.catalog.constants import CategoryType, PizzaSizeChoice, PizzaTypeChoice
 from apps.catalog.models import Category, Product
 from apps.catalog.serializers.ingredient import IngredientProductSerializer
 from apps.catalog.serializers.variation import VariationSerializer
-from apps.catalog.utils.image import get_full_url_image
+from apps.catalog.utils.image import get_url_str_image
+
+logger = logging.getLogger(__name__)
 
 
 class ProductSerializer(serializers.ModelSerializer):
@@ -13,35 +16,18 @@ class ProductSerializer(serializers.ModelSerializer):
     """
 
     image = serializers.SerializerMethodField()
-    min_price = serializers.SerializerMethodField()
+    min_price = serializers.IntegerField()
     variations_have = serializers.SerializerMethodField()
 
     def get_image(self, obj) -> str | None:
         """
         Возврат изображения товара
         """
-        variations = obj.variations.order_by('order')
-
-        if obj.parent_category_id == CategoryType.pizza:
-            # для пицц возврат картинки по умолчанию 30 см, традиционное
-            variation = variations.filter(
-                pizza_size=PizzaSizeChoice.average,
-                pizza_type=PizzaTypeChoice.traditional
-            ).first()
-        else:
-            variation = variations.first()
-
-        if variation:
-            return get_full_url_image(variation.image.url)
-
-    def get_min_price(self, obj) -> int | None:
-        """
-        Возврат минимальной цены товара
-        """
-        variation = obj.variations.order_by('price').first()
-
-        if variation:
-            return variation.price
+        try:
+            return get_url_str_image(obj.image) if obj.image else None
+        except AttributeError:
+            logger.error('Не найдено изображение товара')
+            pass
 
     def get_variations_have(self, obj) -> bool:
         """
@@ -65,7 +51,7 @@ class AllProductsSerializer(serializers.ModelSerializer):
         """
         Возврат активных товаров
         """
-        active_products = obj.products.prefetch_related('variations').filter(status=True).order_by('order')[:12]
+        active_products = obj.products.all()[:12]
         serializer = ProductSerializer(active_products, many=True)
 
         return serializer.data
@@ -81,26 +67,8 @@ class ProductDetailSerializer(serializers.ModelSerializer):
     """
 
     category_id = serializers.IntegerField(source='parent_category_id')
-    default_ingredients = serializers.SerializerMethodField()
-    variations = serializers.SerializerMethodField()
-
-    def get_default_ingredients(self, obj) -> float:
-        """
-        Возврат дефолтных ингредиентов товара
-        """
-        records = obj.ingredients.filter(status=True).order_by('order')
-        serializer = IngredientProductSerializer(records, many=True)
-
-        return serializer.data
-
-    def get_variations(self, obj) -> float:
-        """
-        Возврат вариаций товара
-        """
-        variations = obj.variations.filter(status=True).order_by('order')
-        serializer = VariationSerializer(variations, many=True)
-
-        return serializer.data
+    default_ingredients = IngredientProductSerializer(source='ingredients', many=True)
+    variations = VariationSerializer(many=True)
 
     class Meta:
         model = Product

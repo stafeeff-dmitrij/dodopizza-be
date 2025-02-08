@@ -1,7 +1,7 @@
 from rest_framework import serializers
 
 from apps.catalog.models import Ingredient, VariationToIngredient
-from apps.catalog.utils.image import get_full_url_image
+from apps.catalog.utils.image import get_url_image
 
 
 class IngredientVariationSerializer(serializers.ModelSerializer):
@@ -17,7 +17,7 @@ class IngredientVariationSerializer(serializers.ModelSerializer):
         """
         Возврат изображения ингредиента
         """
-        return get_full_url_image(obj.ingredient.image.url)
+        return get_url_image(obj.ingredient.image.url)
 
     class Meta:
         model = VariationToIngredient

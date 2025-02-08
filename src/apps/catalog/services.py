@@ -11,7 +11,7 @@ from apps.exceptions import InvalidDataResponseException
 logger = logging.getLogger(__name__)
 
 
-class FilterAndSortProductServices:
+class ProductFilterServices:
     """
     Фильтрация товаров по переданным параметрам
     """
@@ -26,12 +26,12 @@ class FilterAndSortProductServices:
     }
 
     @classmethod
-    def filter(cls, params: QueryDict) -> QuerySet[Product]:
+    def __filter(cls, products: QuerySet[Product], params: QueryDict) -> QuerySet[Product]:
         """
         Фильтрация товаров
+        @param products: товары
+        @param params: параметры фильтрации
         """
-
-        products = Product.objects.prefetch_related('variations').annotate(min_price=Min('variations__price'))
 
         for key, value in params.items():
             if key in cls.FILTER_FIELDS and value:
@@ -43,16 +43,18 @@ class FilterAndSortProductServices:
         return products.filter(status=True).distinct()
 
     @classmethod
-    def sort(cls, products: QuerySet[Product], sort_name: str = None) -> QuerySet[Product]:
+    def __sort(cls, products: QuerySet[Product], sort_name: str = None) -> QuerySet[Product]:
         """
         Сортировка товаров
+        @param products: товары
+        @param sort_name: параметр для сортировки
         """
 
         if not sort_name:
             sorted_products = products.order_by('parent_category', 'order')  # сортировка по умолчанию
 
         elif sort_name == SortTypeProduct.PRICE:
-            sorted_products = products.annotate(min_price=Min('variations__price')).order_by('min_price', 'order')
+            sorted_products = products.order_by('min_price', 'order')
 
         elif sort_name == SortTypeProduct.NAME:
             sorted_products = products.order_by('name', 'order')
@@ -63,34 +65,46 @@ class FilterAndSortProductServices:
         return sorted_products
 
     @classmethod
+    def __prep_params(cls, params: QueryDict) -> QueryDict:
+        """
+        Подготовка параметров фильтрации
+        @param params: 'сырые' параметры фильтрации и сортировки
+        @return: 'подготовленные' параметры для последующего использования для фильтрации и сортировки
+        """
+        ingredients = params.get('ingredients')
+
+        if ingredients:
+            params['ingredients'] = ingredients.split(',')  # список id ингредиентов
+
+        in_have = params.get('in_have', 'false').lower() == 'true'  # приводим к boolean
+
+        if in_have:
+            params['in_have'] = 1  # минимальное кол-во товара в наличии для фильтрации
+        else:
+            params.pop('in_have', None)
+
+        return params
+
+    @classmethod
     def get_products(cls, params: QueryDict) -> QuerySet[Product]:
         """
         Возврат отфильтрованных и отсортированных товаров по переданным параметрам
+        @param params: параметры фильтрации и сортировки
+        @return: отфильтрованные и отсортированные товары
         """
 
         # Фильтрация
         filter_params = params.copy()
         partial_params = get_partial_match(filter_params, cls.FILTER_FIELDS)
 
+        products = Product.objects.annotate(min_price=Min('variations__price'))
+
         if partial_params:
-            ingredients = filter_params.get('ingredients')
-
-            if ingredients:
-                filter_params['ingredients'] = ingredients.split(',')  # список id ингредиентов
-
-            in_have = filter_params.get('in_have', 'false').lower() == 'true'  # приводим к boolean
-
-            if in_have:
-                filter_params['in_have'] = 1  # минимальное кол-во товара в наличии для фильтрации
-            else:
-                filter_params.pop('in_have', None)
-
-            products = FilterAndSortProductServices.filter(params=filter_params)
-        else:
-            products = Product.objects.prefetch_related('variations').all()
+            filter_params = cls.__prep_params(filter_params)
+            products = cls.__filter(products=products, params=filter_params)
 
         # Сортировка
         sort_param = params.get('sort')
-        sorted_products = FilterAndSortProductServices.sort(products=products, sort_name=sort_param)
+        sorted_products = cls.__sort(products=products, sort_name=sort_param)
 
         return sorted_products

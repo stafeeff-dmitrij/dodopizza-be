@@ -3,14 +3,19 @@ from django.views.decorators.cache import cache_page
 from drf_spectacular.utils import OpenApiParameter, extend_schema
 from rest_framework import generics, mixins, viewsets
 
-from apps.catalog.models import Category, Product
+from apps.catalog.models import Product
 from apps.catalog.pagination import CatalogPagination
+from apps.catalog.querysets import (
+    get_all_product_queryset,
+    get_filter_product_queryset,
+    get_product_detail_queryset,
+)
 from apps.catalog.serializers.product import (
     AllProductsSerializer,
     ProductDetailSerializer,
     ProductSerializer,
 )
-from apps.catalog.services import FilterAndSortProductServices
+from apps.catalog.services import ProductFilterServices
 from config.settings import CACHE_TIMEOUT
 
 
@@ -21,7 +26,7 @@ class AllProductsListView(viewsets.ModelViewSet):
     Возврат товаров в связке к категориям, которым они принадлежат
     """
 
-    queryset = Category.objects.filter(status=True).order_by('order')
+    queryset = get_all_product_queryset()
     serializer_class = AllProductsSerializer
     pagination_class = None
 
@@ -41,9 +46,10 @@ class ProductsFilterListView(generics.GenericAPIView, mixins.ListModelMixin):
         Фильтрация и сортировка товаров
         """
         params = self.request.query_params
-        products = FilterAndSortProductServices.get_products(params=params)
+        products = ProductFilterServices.get_products(params=params)
+        queryset = get_filter_product_queryset(queryset=products)
 
-        return products
+        return queryset
 
     @extend_schema(
         parameters=[
@@ -67,5 +73,5 @@ class ProductDetailView(generics.RetrieveAPIView):
     Возврат детальной информации о товаре
     """
 
-    queryset = Product.objects.filter(status=True)
+    queryset = get_product_detail_queryset()
     serializer_class = ProductDetailSerializer

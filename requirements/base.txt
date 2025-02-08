@@ -7,3 +7,4 @@ pillow-avif-plugin==1.4.6
 drf-spectacular==0.28.0
 django-redis==5.4.0
 colorlog==6.9.0
+django-silk==5.3.2
