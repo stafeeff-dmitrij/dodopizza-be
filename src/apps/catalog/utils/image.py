@@ -3,6 +3,7 @@ import os
 from django.conf import settings
 
 IMAGES_PATH = os.path.join('apps', 'catalog', 'static', 'catalog', 'images')
+HOST = f'{settings.HTTP_PROTOCOL}://{settings.HOST}:{settings.PORT}'
 
 
 def get_variation_image_path(instance, filename: str) -> str:
@@ -34,9 +35,7 @@ def get_url_image(image_path: str) -> str:
     Возврат полного URL-адреса изображения.
     @param image_path: URL изображения, переданный через ImageField().url
     """
-    # TODO Подставлять хост из переменных окружения в зависимости от дев и прод окружения
-    host = 'http://localhost:8000'
-    return f'{host}{image_path}'
+    return f'{HOST}{image_path}'
 
 
 def get_url_str_image(image_path: str) -> str:
@@ -44,6 +43,4 @@ def get_url_str_image(image_path: str) -> str:
     Возврат полного URL-адреса изображения.
     @param image_path: URL изображения
     """
-    # TODO Подставлять хост из переменных окружения в зависимости от дев и прод окружения
-    host = 'http://localhost:8000'
-    return f'{host}{settings.MEDIA_URL}{image_path}'
+    return f'{HOST}{settings.MEDIA_URL}{image_path}'

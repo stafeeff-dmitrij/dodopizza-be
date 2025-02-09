@@ -6,7 +6,8 @@
     "order": 1,
     "status": true,
     "name": "Сырный бортик",
-    "image": "apps/catalog/static/catalog/images/ingredients/сheese-side.png"
+    "image": "apps/catalog/static/catalog/images/ingredients/сheese-side.png",
+    "category": 2
   }
 },
 {
@@ -16,7 +17,8 @@
     "order": 2,
     "status": true,
     "name": "Пряная говядина",
-    "image": "apps/catalog/static/catalog/images/ingredients/spicy-beef.png"
+    "image": "apps/catalog/static/catalog/images/ingredients/spicy-beef.png",
+    "category": 2
   }
 },
 {
@@ -26,7 +28,8 @@
     "order": 3,
     "status": true,
     "name": "Моцарела",
-    "image": "apps/catalog/static/catalog/images/ingredients/mozzarella.png"
+    "image": "apps/catalog/static/catalog/images/ingredients/mozzarella.png",
+    "category": 2
   }
 },
 {
@@ -36,7 +39,8 @@
     "order": 4,
     "status": true,
     "name": "Сыры чеддер и пармезан",
-    "image": "apps/catalog/static/catalog/images/ingredients/cheddar-parmesan.png"
+    "image": "apps/catalog/static/catalog/images/ingredients/cheddar-parmesan.png",
+    "category": 2
   }
 },
 {
@@ -46,7 +50,8 @@
     "order": 5,
     "status": true,
     "name": "Острый перец халапенью",
-    "image": "apps/catalog/static/catalog/images/ingredients/jalapeno-pepper.png"
+    "image": "apps/catalog/static/catalog/images/ingredients/jalapeno-pepper.png",
+    "category": 2
   }
 },
 {
@@ -56,7 +61,8 @@
     "order": 6,
     "status": true,
     "name": "Нежный цыпленок",
-    "image": "apps/catalog/static/catalog/images/ingredients/tender-chicken.png"
+    "image": "apps/catalog/static/catalog/images/ingredients/tender-chicken.png",
+    "category": 2
   }
 },
 {
@@ -66,7 +72,8 @@
     "order": 7,
     "status": true,
     "name": "Шампиньоны",
-    "image": "apps/catalog/static/catalog/images/ingredients/chamignons.png"
+    "image": "apps/catalog/static/catalog/images/ingredients/chamignons.png",
+    "category": 2
   }
 },
 {
@@ -76,7 +83,8 @@
     "order": 8,
     "status": true,
     "name": "Ветчина",
-    "image": "apps/catalog/static/catalog/images/ingredients/ham.png"
+    "image": "apps/catalog/static/catalog/images/ingredients/ham.png",
+    "category": 2
   }
 },
 {
@@ -86,7 +94,8 @@
     "order": 9,
     "status": true,
     "name": "Пикантная пепперони",
-    "image": "apps/catalog/static/catalog/images/ingredients/spicy-pepperoni.png"
+    "image": "apps/catalog/static/catalog/images/ingredients/spicy-pepperoni.png",
+    "category": 2
   }
 },
 {
@@ -96,7 +105,8 @@
     "order": 10,
     "status": true,
     "name": "Острая чоризо",
-    "image": "apps/catalog/static/catalog/images/ingredients/spicy-chorizo.png"
+    "image": "apps/catalog/static/catalog/images/ingredients/spicy-chorizo.png",
+    "category": 2
   }
 },
 {
@@ -106,7 +116,8 @@
     "order": 11,
     "status": true,
     "name": "Маринованные огурчики",
-    "image": "apps/catalog/static/catalog/images/ingredients/pickled-cucumbers.png"
+    "image": "apps/catalog/static/catalog/images/ingredients/pickled-cucumbers.png",
+    "category": 2
   }
 },
 {
@@ -116,7 +127,8 @@
     "order": 12,
     "status": true,
     "name": "Свежие томаты",
-    "image": "apps/catalog/static/catalog/images/ingredients/fresh-tomatoes.png"
+    "image": "apps/catalog/static/catalog/images/ingredients/fresh-tomatoes.png",
+    "category": 2
   }
 },
 {
@@ -126,7 +138,8 @@
     "order": 13,
     "status": true,
     "name": "Красный лук",
-    "image": "apps/catalog/static/catalog/images/ingredients/red-onion.png"
+    "image": "apps/catalog/static/catalog/images/ingredients/red-onion.png",
+    "category": 2
   }
 },
 {
@@ -136,7 +149,8 @@
     "order": 14,
     "status": true,
     "name": "Сочные ананасы",
-    "image": "apps/catalog/static/catalog/images/ingredients/juicy-pineapples.png"
+    "image": "apps/catalog/static/catalog/images/ingredients/juicy-pineapples.png",
+    "category": 2
   }
 },
 {
@@ -146,7 +160,8 @@
     "order": 15,
     "status": true,
     "name": "Итальянские травы",
-    "image": "apps/catalog/static/catalog/images/ingredients/italian-herbs.png"
+    "image": "apps/catalog/static/catalog/images/ingredients/italian-herbs.png",
+    "category": 2
   }
 },
 {
@@ -156,7 +171,8 @@
     "order": 16,
     "status": true,
     "name": "Сладкий перец",
-    "image": "apps/catalog/static/catalog/images/ingredients/sweet-pepper.png"
+    "image": "apps/catalog/static/catalog/images/ingredients/sweet-pepper.png",
+    "category": 2
   }
 },
 {
@@ -166,7 +182,8 @@
     "order": 17,
     "status": true,
     "name": "Кубики брынзы",
-    "image": "apps/catalog/static/catalog/images/ingredients/cheese-cubes.png"
+    "image": "apps/catalog/static/catalog/images/ingredients/cheese-cubes.png",
+    "category": 2
   }
 },
 {
@@ -176,7 +193,8 @@
     "order": 18,
     "status": true,
     "name": "Митболы",
-    "image": "apps/catalog/static/catalog/images/ingredients/meatballs.png"
+    "image": "apps/catalog/static/catalog/images/ingredients/meatballs.png",
+    "category": 2
   }
 },
 {
@@ -186,7 +204,8 @@
     "order": 19,
     "status": true,
     "name": "Баварские колбаски",
-    "image": "apps/catalog/static/catalog/images/ingredients/bavarian-sausages.png"
+    "image": "apps/catalog/static/catalog/images/ingredients/bavarian-sausages.png",
+    "category": 2
   }
 },
 {
@@ -196,7 +215,8 @@
     "order": 20,
     "status": true,
     "name": "Креветки",
-    "image": "apps/catalog/static/catalog/images/ingredients/shrimp.png"
+    "image": "apps/catalog/static/catalog/images/ingredients/shrimp.png",
+    "category": 2
   }
 },
 {
@@ -206,37 +226,52 @@
     "order": 21,
     "status": true,
     "name": "Молоко",
-    "image": "apps/catalog/static/catalog/images/ingredients/milk.png"
+    "image": "apps/catalog/static/catalog/images/ingredients/milk.png",
+    "category": 7
   }
 },
 {
   "model": "catalog.ingredient",
   "pk": 22,
   "fields": {
-    "order": 22,
+    "order": 23,
     "status": true,
     "name": "Сироп со вкусом карамели",
-    "image": "apps/catalog/static/catalog/images/ingredients/syrup-with-caramel.png"
+    "image": "apps/catalog/static/catalog/images/ingredients/syrup-with-caramel.png",
+    "category": 7
   }
 },
 {
   "model": "catalog.ingredient",
   "pk": 23,
   "fields": {
-    "order": 23,
+    "order": 24,
     "status": true,
     "name": "Сироп со вкусом фундука",
-    "image": "apps/catalog/static/catalog/images/ingredients/syrup-with-hazelnuts.png"
+    "image": "apps/catalog/static/catalog/images/ingredients/syrup-with-hazelnuts.png",
+    "category": 7
   }
 },
 {
   "model": "catalog.ingredient",
   "pk": 24,
   "fields": {
-    "order": 24,
+    "order": 25,
     "status": true,
     "name": "Кокосовый сироп",
-    "image": "apps/catalog/static/catalog/images/ingredients/coconut-syrup.png"
+    "image": "apps/catalog/static/catalog/images/ingredients/coconut-syrup.png",
+    "category": 7
+  }
+},
+{
+  "model": "catalog.ingredient",
+  "pk": 25,
+  "fields": {
+    "order": 22,
+    "status": true,
+    "name": "Сироп со вкусом яблочного пирога",
+    "image": "apps/catalog/static/catalog/images/ingredients/apple-pie-flavored-syrup.png",
+    "category": 7
   }
 }
 ]

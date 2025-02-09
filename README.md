@@ -29,19 +29,19 @@
 ### Миграции
 Экспорт категорий:
    ```
-   python manage.py dumpdata catalog.category --indent 2 > ../fixtures/categories.json
+   python manage.py dumpdata catalog.category --indent 2 > ../fixtures/1 categories.json
    ```
 Экспорт ингредиентов:
    ```
-   python manage.py dumpdata catalog.ingredient --indent 2 > ../fixtures/ingredients.json
+   python manage.py dumpdata catalog.ingredient --indent 2 > ../fixtures/2-ingredients.json
    ```
 Экспорт товаров:
    ```
-   python manage.py dumpdata catalog.product --indent 2 > ../fixtures/products.json
+   python manage.py dumpdata catalog.product --indent 2 > ../fixtures/3-products.json
    ```
 Экспорт вариаций:
    ```
-   python manage.py dumpdata catalog.variation catalog.variationtoingredient --indent 2 > ../fixtures/variations.json
+   python manage.py dumpdata catalog.variation catalog.variationtoingredient --indent 2 > ../fixtures/4-variations.json
    ```
 Импорт категорий:
    ```

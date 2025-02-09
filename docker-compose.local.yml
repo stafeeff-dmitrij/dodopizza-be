@@ -8,6 +8,8 @@ services:
       POSTGRES_USER: ${DB_USER}
       POSTGRES_PASSWORD: ${DB_PASS}
       POSTGRES_DB: ${DB_NAME}
+    expose:
+      - 5432
     ports:
       - "5432:5432"
     volumes:
@@ -27,8 +29,38 @@ services:
       interval: 1s
       timeout: 3s
       retries: 5
+    expose:
+      - 6379
     ports:
       - "6379:6379"
 
+  api:
+    build:
+      context: .
+    env_file: .env.dev
+    container_name: api
+    command: [ "/docker/api.sh" ]
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./fixtures:/fixtures
+      - static:/src/static
+
+  nginx:
+    image: nginx
+    volumes:
+      - ./nginx/:/etc/nginx/templates/
+      - static:/static
+    ports:
+      - "80:80"
+    depends_on:
+      - api
+
 volumes:
   postgres_data:
+  static:

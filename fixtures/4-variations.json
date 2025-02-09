@@ -1,0 +1,4394 @@
+[
+{
+  "model": "catalog.variation",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 599,
+    "image": "apps/catalog/static/catalog/images/variations/barbecue-cola-25-traditional_MNIlBto.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 350,
+    "product": 1
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 2,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 889,
+    "image": "apps/catalog/static/catalog/images/variations/barbecue-cola-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 540,
+    "product": 1
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 3,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 1049,
+    "image": "apps/catalog/static/catalog/images/variations/barbecue-cola-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 790,
+    "product": 1
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 4,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 889,
+    "image": "apps/catalog/static/catalog/images/variations/barbecue-cola-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 420,
+    "product": 1
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 5,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 1049,
+    "image": "apps/catalog/static/catalog/images/variations/barbecue-cola-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 650,
+    "product": 1
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 6,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 349,
+    "image": "apps/catalog/static/catalog/images/variations/shrimp-5.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 5,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 70,
+    "product": 31
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 7,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 219,
+    "image": "apps/catalog/static/catalog/images/variations/shrimp-3.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 3,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 40,
+    "product": 31
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 8,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 219,
+    "image": "apps/catalog/static/catalog/images/variations/omelet-with-bacon-in-pit.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 180,
+    "product": 32
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 9,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 109,
+    "image": "apps/catalog/static/catalog/images/variations/americano-coffee.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.4",
+    "weight": null,
+    "mass": 380,
+    "product": 64
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 10,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 549,
+    "image": "apps/catalog/static/catalog/images/variations/beefstroganoff-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 410,
+    "product": 2
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 11,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 819,
+    "image": "apps/catalog/static/catalog/images/variations/beefstroganoff-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 570,
+    "product": 2
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 12,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 999,
+    "image": "apps/catalog/static/catalog/images/variations/beefstroganoff-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 770,
+    "product": 2
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 13,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 819,
+    "image": "apps/catalog/static/catalog/images/variations/beefstroganoff-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 420,
+    "product": 2
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 14,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 999,
+    "image": "apps/catalog/static/catalog/images/variations/beefstroganoff-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 680,
+    "product": 2
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 15,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 549,
+    "image": "apps/catalog/static/catalog/images/variations/meat-with-adjika-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 420,
+    "product": 3
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 16,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 819,
+    "image": "apps/catalog/static/catalog/images/variations/meat-with-adjika-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 610,
+    "product": 3
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 17,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 999,
+    "image": "apps/catalog/static/catalog/images/variations/meat-with-adjika-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 840,
+    "product": 3
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 18,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 819,
+    "image": "apps/catalog/static/catalog/images/variations/meat-with-adjika-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 520,
+    "product": 3
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 19,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 999,
+    "image": "apps/catalog/static/catalog/images/variations/meat-with-adjika-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 720,
+    "product": 3
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 20,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 619,
+    "image": "apps/catalog/static/catalog/images/variations/shrimp-with-sweet-chili-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 390,
+    "product": 4
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 21,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 919,
+    "image": "apps/catalog/static/catalog/images/variations/shrimp-with-sweet-chili-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 630,
+    "product": 4
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 22,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 1039,
+    "image": "apps/catalog/static/catalog/images/variations/shrimp-with-sweet-chili-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 800,
+    "product": 4
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 23,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 919,
+    "image": "apps/catalog/static/catalog/images/variations/shrimp-with-sweet-chili-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 480,
+    "product": 4
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 24,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 1039,
+    "image": "apps/catalog/static/catalog/images/variations/shrimp-with-sweet-chili-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 710,
+    "product": 4
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 25,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 329,
+    "image": "apps/catalog/static/catalog/images/variations/cheese-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 310,
+    "product": 5
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 26,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 619,
+    "image": "apps/catalog/static/catalog/images/variations/cheese-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 470,
+    "product": 5
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 27,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 779,
+    "image": "apps/catalog/static/catalog/images/variations/cheese-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 640,
+    "product": 5
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 28,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 619,
+    "image": "apps/catalog/static/catalog/images/variations/cheese-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 360,
+    "product": 5
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 29,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 779,
+    "image": "apps/catalog/static/catalog/images/variations/cheese-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 530,
+    "product": 5
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 30,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 369,
+    "image": "apps/catalog/static/catalog/images/variations/fresh-pepperoni-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 380,
+    "product": 6
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 31,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 629,
+    "image": "apps/catalog/static/catalog/images/variations/fresh-pepperoni-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 590,
+    "product": 6
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 32,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 749,
+    "image": "apps/catalog/static/catalog/images/variations/fresh-pepperoni-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 790,
+    "product": 6
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 33,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 629,
+    "image": "apps/catalog/static/catalog/images/variations/fresh-pepperoni-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 490,
+    "product": 6
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 34,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 749,
+    "image": "apps/catalog/static/catalog/images/variations/fresh-pepperoni-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 670,
+    "product": 6
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 35,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 489,
+    "image": "apps/catalog/static/catalog/images/variations/double-chicken-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 360,
+    "product": 7
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 36,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 749,
+    "image": "apps/catalog/static/catalog/images/variations/double-chicken-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 520,
+    "product": 7
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 37,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 869,
+    "image": "apps/catalog/static/catalog/images/variations/double-chicken-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 730,
+    "product": 7
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 38,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 749,
+    "image": "apps/catalog/static/catalog/images/variations/double-chicken-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 430,
+    "product": 7
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 39,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 869,
+    "image": "apps/catalog/static/catalog/images/variations/double-chicken-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 610,
+    "product": 7
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 40,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 479,
+    "image": "apps/catalog/static/catalog/images/variations/ham-and-cheese-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 320,
+    "product": 8
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 41,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 709,
+    "image": "apps/catalog/static/catalog/images/variations/ham-and-cheese-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 480,
+    "product": 8
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 42,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 839,
+    "image": "apps/catalog/static/catalog/images/variations/ham-and-cheese-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 630,
+    "product": 8
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 43,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 709,
+    "image": "apps/catalog/static/catalog/images/variations/ham-and-cheese-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 370,
+    "product": 8
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 44,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 839,
+    "image": "apps/catalog/static/catalog/images/variations/ham-and-cheese-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 550,
+    "product": 8
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 45,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 319,
+    "image": "apps/catalog/static/catalog/images/variations/chorizo-fresh-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 330,
+    "product": 9
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 46,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 619,
+    "image": "apps/catalog/static/catalog/images/variations/chorizo-fresh-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 470,
+    "product": 9
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 47,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 779,
+    "image": "apps/catalog/static/catalog/images/variations/chorizo-fresh-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 630,
+    "product": 9
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 48,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 619,
+    "image": "apps/catalog/static/catalog/images/variations/chorizo-fresh-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 380,
+    "product": 9
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 49,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 779,
+    "image": "apps/catalog/static/catalog/images/variations/chorizo-fresh-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 500,
+    "product": 9
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 50,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 519,
+    "image": "apps/catalog/static/catalog/images/variations/ham-and-mushrooms-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 370,
+    "product": 10
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 51,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 799,
+    "image": "apps/catalog/static/catalog/images/variations/ham-and-mushrooms-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 580,
+    "product": 10
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 52,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 989,
+    "image": "apps/catalog/static/catalog/images/variations/ham-and-mushrooms-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 740,
+    "product": 10
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 53,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 799,
+    "image": "apps/catalog/static/catalog/images/variations/ham-and-mushrooms-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 450,
+    "product": 10
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 54,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 989,
+    "image": "apps/catalog/static/catalog/images/variations/ham-and-mushrooms-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 660,
+    "product": 10
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 55,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 619,
+    "image": "apps/catalog/static/catalog/images/variations/julienne-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 430,
+    "product": 11
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 56,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 929,
+    "image": "apps/catalog/static/catalog/images/variations/julienne-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 630,
+    "product": 11
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 57,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 1069,
+    "image": "apps/catalog/static/catalog/images/variations/julienne-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 820,
+    "product": 11
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 58,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 929,
+    "image": "apps/catalog/static/catalog/images/variations/julienne-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 510,
+    "product": 11
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 59,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 1069,
+    "image": "apps/catalog/static/catalog/images/variations/julienne-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 730,
+    "product": 11
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 60,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 649,
+    "image": "apps/catalog/static/catalog/images/variations/pesto-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 400,
+    "product": 12
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 61,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 919,
+    "image": "apps/catalog/static/catalog/images/variations/pesto-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 610,
+    "product": 12
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 62,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 1089,
+    "image": "apps/catalog/static/catalog/images/variations/pesto-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 810,
+    "product": 12
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 63,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 919,
+    "image": "apps/catalog/static/catalog/images/variations/pesto-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 490,
+    "product": 12
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 64,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 1089,
+    "image": "apps/catalog/static/catalog/images/variations/pesto-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 740,
+    "product": 12
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 65,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 659,
+    "image": "apps/catalog/static/catalog/images/variations/carbonara-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 410,
+    "product": 13
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 66,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 1009,
+    "image": "apps/catalog/static/catalog/images/variations/carbonara-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 590,
+    "product": 13
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 67,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 1119,
+    "image": "apps/catalog/static/catalog/images/variations/carbonara-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 800,
+    "product": 13
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 68,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 1009,
+    "image": "apps/catalog/static/catalog/images/variations/carbonara-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 520,
+    "product": 13
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 69,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 1119,
+    "image": "apps/catalog/static/catalog/images/variations/carbonara-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 710,
+    "product": 13
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 70,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 609,
+    "image": "apps/catalog/static/catalog/images/variations/meat-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 390,
+    "product": 14
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 71,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 909,
+    "image": "apps/catalog/static/catalog/images/variations/meat-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 590,
+    "product": 14
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 72,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 1069,
+    "image": "apps/catalog/static/catalog/images/variations/meat-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 820,
+    "product": 14
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 73,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 909,
+    "image": "apps/catalog/static/catalog/images/variations/meat-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 490,
+    "product": 14
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 74,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 1069,
+    "image": "apps/catalog/static/catalog/images/variations/meat-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 700,
+    "product": 14
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 75,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 669,
+    "image": "apps/catalog/static/catalog/images/variations/arriva-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 370,
+    "product": 15
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 76,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 969,
+    "image": "apps/catalog/static/catalog/images/variations/arriva-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 570,
+    "product": 15
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 77,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 1159,
+    "image": "apps/catalog/static/catalog/images/variations/arriva-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 760,
+    "product": 15
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 78,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 969,
+    "image": "apps/catalog/static/catalog/images/variations/arriva-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 460,
+    "product": 15
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 79,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 1159,
+    "image": "apps/catalog/static/catalog/images/variations/arriva-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 650,
+    "product": 15
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 80,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 559,
+    "image": "apps/catalog/static/catalog/images/variations/burger-pizza-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 420,
+    "product": 16
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 81,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 829,
+    "image": "apps/catalog/static/catalog/images/variations/burger-pizza-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 630,
+    "product": 16
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 82,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 1029,
+    "image": "apps/catalog/static/catalog/images/variations/burger-pizza-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 890,
+    "product": 16
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 83,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 829,
+    "image": "apps/catalog/static/catalog/images/variations/burger-pizza-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 540,
+    "product": 16
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 84,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 1029,
+    "image": "apps/catalog/static/catalog/images/variations/burger-pizza-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 780,
+    "product": 16
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 85,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 669,
+    "image": "apps/catalog/static/catalog/images/variations/cheese-chicken-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 410,
+    "product": 17
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 86,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 959,
+    "image": "apps/catalog/static/catalog/images/variations/cheese-chicken-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 620,
+    "product": 17
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 87,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 1119,
+    "image": "apps/catalog/static/catalog/images/variations/cheese-chicken-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 860,
+    "product": 17
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 88,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 959,
+    "image": "apps/catalog/static/catalog/images/variations/cheese-chicken-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 510,
+    "product": 17
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 89,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 1119,
+    "image": "apps/catalog/static/catalog/images/variations/cheese-chicken-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 760,
+    "product": 17
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 90,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 829,
+    "image": "apps/catalog/static/catalog/images/variations/dodo-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 440,
+    "product": 18
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 91,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 1169,
+    "image": "apps/catalog/static/catalog/images/variations/dodo-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 720,
+    "product": 18
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 92,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 1369,
+    "image": "apps/catalog/static/catalog/images/variations/dodo-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 970,
+    "product": 18
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 93,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 1169,
+    "image": "apps/catalog/static/catalog/images/variations/dodo-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 620,
+    "product": 18
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 94,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 1369,
+    "image": "apps/catalog/static/catalog/images/variations/dodo-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 870,
+    "product": 18
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 95,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 519,
+    "image": "apps/catalog/static/catalog/images/variations/pepperoni-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 340,
+    "product": 19
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 96,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 789,
+    "image": "apps/catalog/static/catalog/images/variations/pepperoni-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 550,
+    "product": 19
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 97,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 929,
+    "image": "apps/catalog/static/catalog/images/variations/pepperoni-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 760,
+    "product": 19
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 98,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 789,
+    "image": "apps/catalog/static/catalog/images/variations/pepperoni-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 450,
+    "product": 19
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 99,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 929,
+    "image": "apps/catalog/static/catalog/images/variations/pepperoni-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 630,
+    "product": 19
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 100,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 529,
+    "image": "apps/catalog/static/catalog/images/variations/four-seasons-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 380,
+    "product": 20
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 101,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 829,
+    "image": "apps/catalog/static/catalog/images/variations/four-seasons-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 610,
+    "product": 20
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 102,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 1009,
+    "image": "apps/catalog/static/catalog/images/variations/four-seasons-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 840,
+    "product": 20
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 103,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 829,
+    "image": "apps/catalog/static/catalog/images/variations/four-seasons-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 510,
+    "product": 20
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 104,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 1009,
+    "image": "apps/catalog/static/catalog/images/variations/four-seasons-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 730,
+    "product": 20
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 105,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 539,
+    "image": "apps/catalog/static/catalog/images/variations/hawaiian-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 390,
+    "product": 21
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 106,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 829,
+    "image": "apps/catalog/static/catalog/images/variations/hawaiian-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 590,
+    "product": 21
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 107,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 969,
+    "image": "apps/catalog/static/catalog/images/variations/hawaiian-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 810,
+    "product": 21
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 108,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 829,
+    "image": "apps/catalog/static/catalog/images/variations/hawaiian-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 490,
+    "product": 21
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 109,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 969,
+    "image": "apps/catalog/static/catalog/images/variations/hawaiian-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 680,
+    "product": 21
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 110,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 679,
+    "image": "apps/catalog/static/catalog/images/variations/barbecue-chicken-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 420,
+    "product": 22
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 111,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 1009,
+    "image": "apps/catalog/static/catalog/images/variations/barbecue-chicken-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 640,
+    "product": 22
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 112,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 1129,
+    "image": "apps/catalog/static/catalog/images/variations/barbecue-chicken-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 900,
+    "product": 22
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 113,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 1009,
+    "image": "apps/catalog/static/catalog/images/variations/barbecue-chicken-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 540,
+    "product": 22
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 114,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 1129,
+    "image": "apps/catalog/static/catalog/images/variations/barbecue-chicken-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 780,
+    "product": 22
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 115,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 699,
+    "image": "apps/catalog/static/catalog/images/variations/chicken-ranch-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 410,
+    "product": 23
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 116,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 1009,
+    "image": "apps/catalog/static/catalog/images/variations/chicken-ranch-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 630,
+    "product": 23
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 117,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 1179,
+    "image": "apps/catalog/static/catalog/images/variations/chicken-ranch-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 880,
+    "product": 23
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 118,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 1009,
+    "image": "apps/catalog/static/catalog/images/variations/chicken-ranch-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 470,
+    "product": 23
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 119,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 1179,
+    "image": "apps/catalog/static/catalog/images/variations/chicken-ranch-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 720,
+    "product": 23
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 120,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 529,
+    "image": "apps/catalog/static/catalog/images/variations/margaret-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 400,
+    "product": 24
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 121,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 799,
+    "image": "apps/catalog/static/catalog/images/variations/margaret-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 590,
+    "product": 24
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 122,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 969,
+    "image": "apps/catalog/static/catalog/images/variations/margaret-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 830,
+    "product": 24
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 123,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 799,
+    "image": "apps/catalog/static/catalog/images/variations/margaret-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 500,
+    "product": 24
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 124,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 969,
+    "image": "apps/catalog/static/catalog/images/variations/margaret-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 710,
+    "product": 24
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 125,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 679,
+    "image": "apps/catalog/static/catalog/images/variations/diablo-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 420,
+    "product": 25
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 126,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 1029,
+    "image": "apps/catalog/static/catalog/images/variations/diablo-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 680,
+    "product": 25
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 127,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 1199,
+    "image": "apps/catalog/static/catalog/images/variations/diablo-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 940,
+    "product": 25
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 128,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 1029,
+    "image": "apps/catalog/static/catalog/images/variations/diablo-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 560,
+    "product": 25
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 129,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 1199,
+    "image": "apps/catalog/static/catalog/images/variations/diablo-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 800,
+    "product": 25
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 130,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 549,
+    "image": "apps/catalog/static/catalog/images/variations/barbecue-sausages-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 370,
+    "product": 26
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 131,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 839,
+    "image": "apps/catalog/static/catalog/images/variations/barbecue-sausages-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 570,
+    "product": 26
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 132,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 1039,
+    "image": "apps/catalog/static/catalog/images/variations/barbecue-sausages-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 760,
+    "product": 26
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 133,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 839,
+    "image": "apps/catalog/static/catalog/images/variations/barbecue-sausages-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 480,
+    "product": 26
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 134,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 1039,
+    "image": "apps/catalog/static/catalog/images/variations/barbecue-sausages-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 670,
+    "product": 26
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 135,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 609,
+    "image": "apps/catalog/static/catalog/images/variations/vegetables-and-mushrooms-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 420,
+    "product": 27
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 136,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 919,
+    "image": "apps/catalog/static/catalog/images/variations/vegetables-and-mushrooms-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 610,
+    "product": 27
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 137,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 1059,
+    "image": "apps/catalog/static/catalog/images/variations/vegetables-and-mushrooms-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 870,
+    "product": 27
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 138,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 919,
+    "image": "apps/catalog/static/catalog/images/variations/vegetables-and-mushrooms-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 530,
+    "product": 27
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 139,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 1059,
+    "image": "apps/catalog/static/catalog/images/variations/vegetables-and-mushrooms-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 740,
+    "product": 27
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 140,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 639,
+    "image": "apps/catalog/static/catalog/images/variations/double-pepperoni-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 390,
+    "product": 28
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 141,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 959,
+    "image": "apps/catalog/static/catalog/images/variations/double-pepperoni-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 620,
+    "product": 28
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 142,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 1119,
+    "image": "apps/catalog/static/catalog/images/variations/double-pepperoni-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 770,
+    "product": 28
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 143,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 959,
+    "image": "apps/catalog/static/catalog/images/variations/double-pepperoni-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 490,
+    "product": 28
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 144,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 1119,
+    "image": "apps/catalog/static/catalog/images/variations/double-pepperoni-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 660,
+    "product": 28
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 145,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 599,
+    "image": "apps/catalog/static/catalog/images/variations/dodo-mix-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 400,
+    "product": 29
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 146,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 919,
+    "image": "apps/catalog/static/catalog/images/variations/dodo-mix-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 610,
+    "product": 29
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 147,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 1069,
+    "image": "apps/catalog/static/catalog/images/variations/dodo-mix-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 830,
+    "product": 29
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 148,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 919,
+    "image": "apps/catalog/static/catalog/images/variations/dodo-mix-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 490,
+    "product": 29
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 149,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 1069,
+    "image": "apps/catalog/static/catalog/images/variations/dodo-mix-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 700,
+    "product": 29
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 150,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 309,
+    "image": "apps/catalog/static/catalog/images/variations/assemble-your-pizza-25-traditional.avif",
+    "pizza_size": 25,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 350,
+    "product": 30
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 151,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 559,
+    "image": "apps/catalog/static/catalog/images/variations/assemble-your-pizza-30-traditional.avif",
+    "pizza_size": 30,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 520,
+    "product": 30
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 152,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "price": 669,
+    "image": "apps/catalog/static/catalog/images/variations/assemble-your-pizza-35-traditional.avif",
+    "pizza_size": 35,
+    "pizza_type": "traditional",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 660,
+    "product": 30
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 153,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "price": 559,
+    "image": "apps/catalog/static/catalog/images/variations/assemble-your-pizza-30-slim.avif",
+    "pizza_size": 30,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 420,
+    "product": 30
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 154,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "price": 669,
+    "image": "apps/catalog/static/catalog/images/variations/assemble-your-pizza-35-slim.avif",
+    "pizza_size": 35,
+    "pizza_type": "slim",
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 570,
+    "product": 30
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 155,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 329,
+    "image": "apps/catalog/static/catalog/images/variations/chicken-nuggets-10.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 10,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 220,
+    "product": 53
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 156,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 329,
+    "image": "apps/catalog/static/catalog/images/variations/potatoes-from-oven-with-sauce-big.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": "big",
+    "volume": null,
+    "weight": null,
+    "mass": 180,
+    "product": 54
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 157,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 569,
+    "image": "apps/catalog/static/catalog/images/variations/chicken-pieces-big.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": "big",
+    "volume": null,
+    "weight": null,
+    "mass": 260,
+    "product": 56
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 158,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 569,
+    "image": "apps/catalog/static/catalog/images/variations/barbecue-chicken-wings.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 10,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 330,
+    "product": 57
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 159,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 395,
+    "image": "apps/catalog/static/catalog/images/variations/lunch-box-with-chicken-wings.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 210,
+    "product": 58
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 160,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 425,
+    "image": "apps/catalog/static/catalog/images/variations/lunch-box-with-chicken-pieces.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 200,
+    "product": 59
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 161,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 199,
+    "image": "apps/catalog/static/catalog/images/variations/omelet-with-bacon.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 130,
+    "product": 33
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 162,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 199,
+    "image": "apps/catalog/static/catalog/images/variations/omelet-with-ham-and-mushrooms.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 110,
+    "product": 35
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 163,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 199,
+    "image": "apps/catalog/static/catalog/images/variations/omelet-with-pepperoni.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 110,
+    "product": 37
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 164,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 209,
+    "image": "apps/catalog/static/catalog/images/variations/cheese-omelet.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 100,
+    "product": 38
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 165,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 319,
+    "image": "apps/catalog/static/catalog/images/variations/sandwich-with-beef.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 170,
+    "product": 40
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 166,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 299,
+    "image": "apps/catalog/static/catalog/images/variations/sandwich-ham-and-cheese.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 210,
+    "product": 41
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 167,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 299,
+    "image": "apps/catalog/static/catalog/images/variations/sandwich-chorizo-barbecue.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 210,
+    "product": 42
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 168,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 389,
+    "image": "apps/catalog/static/catalog/images/variations/pasta-with-shrimp.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 300,
+    "product": 43
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 169,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 389,
+    "image": "apps/catalog/static/catalog/images/variations/pasta-carbonara.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 350,
+    "product": 44
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 170,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 389,
+    "image": "apps/catalog/static/catalog/images/variations/meat-pasta.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 300,
+    "product": 45
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 171,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 389,
+    "image": "apps/catalog/static/catalog/images/variations/pasta-pesto.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 300,
+    "product": 46
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 172,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 279,
+    "image": "apps/catalog/static/catalog/images/variations/super-meat-dodster.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 160,
+    "product": 47
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 173,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 229,
+    "image": "apps/catalog/static/catalog/images/variations/ham-dodster.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 160,
+    "product": 48
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 174,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 229,
+    "image": "apps/catalog/static/catalog/images/variations/dodster.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 210,
+    "product": 49
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 175,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 259,
+    "image": "apps/catalog/static/catalog/images/variations/sharp-dodster.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 190,
+    "product": 50
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 176,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 249,
+    "image": "apps/catalog/static/catalog/images/variations/mushroom-starter.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 150,
+    "product": 51
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 177,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 249,
+    "image": "apps/catalog/static/catalog/images/variations/cheese-starter.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 160,
+    "product": 52
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 178,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 289,
+    "image": "apps/catalog/static/catalog/images/variations/potatoes-from-oven.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": "big",
+    "volume": null,
+    "weight": null,
+    "mass": 160,
+    "product": 55
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 179,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 305,
+    "image": "apps/catalog/static/catalog/images/variations/caesar-salad.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 170,
+    "product": 60
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 180,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 169,
+    "image": "apps/catalog/static/catalog/images/variations/cappuccino-apple-pie.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.3",
+    "weight": null,
+    "mass": 210,
+    "product": 120
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 181,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 169,
+    "image": "apps/catalog/static/catalog/images/variations/caramel-cappuccino-coffee.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.3",
+    "weight": null,
+    "mass": 230,
+    "product": 72
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 182,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 169,
+    "image": "apps/catalog/static/catalog/images/variations/coconut-latte-coffee.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.3",
+    "weight": null,
+    "mass": 300,
+    "product": 73
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 183,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 169,
+    "image": "apps/catalog/static/catalog/images/variations/coffee-nut-latte.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.3",
+    "weight": null,
+    "mass": 300,
+    "product": 74
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 184,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 240,
+    "image": "apps/catalog/static/catalog/images/variations/ice-cappuccino.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.3",
+    "weight": null,
+    "mass": 280,
+    "product": 75
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 185,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 169,
+    "image": "apps/catalog/static/catalog/images/variations/cappuccino-coffee.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.4",
+    "weight": null,
+    "mass": 250,
+    "product": 65
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 186,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 169,
+    "image": "apps/catalog/static/catalog/images/variations/latte-coffee.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.4",
+    "weight": null,
+    "mass": 330,
+    "product": 66
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 187,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 139,
+    "image": "apps/catalog/static/catalog/images/variations/watermelon-lime-lemonade.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.5",
+    "weight": null,
+    "mass": null,
+    "product": 77
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 188,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 145,
+    "image": "apps/catalog/static/catalog/images/variations/good-cola-raspberry.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.5",
+    "weight": null,
+    "mass": null,
+    "product": 78
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 189,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 145,
+    "image": "apps/catalog/static/catalog/images/variations/good-cola.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.5",
+    "weight": null,
+    "mass": null,
+    "product": 79
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 190,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 145,
+    "image": "apps/catalog/static/catalog/images/variations/good-cola-without-sugar.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.5",
+    "weight": null,
+    "mass": null,
+    "product": 80
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 191,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 145,
+    "image": "apps/catalog/static/catalog/images/variations/good-orange.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.5",
+    "weight": null,
+    "mass": null,
+    "product": 81
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 192,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 145,
+    "image": "apps/catalog/static/catalog/images/variations/good-lemon-lime.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.5",
+    "weight": null,
+    "mass": null,
+    "product": 82
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 193,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 145,
+    "image": "apps/catalog/static/catalog/images/variations/good-vanilla-cola.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.5",
+    "weight": null,
+    "mass": null,
+    "product": 83
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 194,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 149,
+    "image": "apps/catalog/static/catalog/images/variations/rich-tea-black-with-lemon.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.5",
+    "weight": null,
+    "mass": null,
+    "product": 84
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 195,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 149,
+    "image": "apps/catalog/static/catalog/images/variations/rich-tea-green.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.5",
+    "weight": null,
+    "mass": null,
+    "product": 85
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 196,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 149,
+    "image": "apps/catalog/static/catalog/images/variations/rich-tea-green-with-mango.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.5",
+    "weight": null,
+    "mass": null,
+    "product": 86
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 197,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 269,
+    "image": "apps/catalog/static/catalog/images/variations/rich-orange-juice.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "1",
+    "weight": null,
+    "mass": null,
+    "product": 87
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 198,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 269,
+    "image": "apps/catalog/static/catalog/images/variations/rich-apple-juice.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "1",
+    "weight": null,
+    "mass": null,
+    "product": 88
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 199,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 269,
+    "image": "apps/catalog/static/catalog/images/variations/cherry-nectar-rich.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "1",
+    "weight": null,
+    "mass": null,
+    "product": 89
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 200,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 85,
+    "image": "apps/catalog/static/catalog/images/variations/bonaqua-non-carbonated-water.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.5",
+    "weight": null,
+    "mass": null,
+    "product": 90
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 201,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 159,
+    "image": "apps/catalog/static/catalog/images/variations/cranberry-juice.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.45",
+    "weight": null,
+    "mass": null,
+    "product": 91
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 202,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 159,
+    "image": "apps/catalog/static/catalog/images/variations/mors-black-currant.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.45",
+    "weight": null,
+    "mass": null,
+    "product": 92
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 203,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 159,
+    "image": "apps/catalog/static/catalog/images/variations/mors-cherry.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.45",
+    "weight": null,
+    "mass": null,
+    "product": 93
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 204,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 279,
+    "image": "apps/catalog/static/catalog/images/variations/taiga-tea-10-sachets.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": null,
+    "product": 94
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 205,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 159,
+    "image": "apps/catalog/static/catalog/images/variations/cocoa.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.3",
+    "weight": null,
+    "mass": 240,
+    "product": 76
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 206,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 165,
+    "image": "apps/catalog/static/catalog/images/variations/syrniki-with-condensed-milk-2.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 2,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 140,
+    "product": 61
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 207,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 309,
+    "image": "apps/catalog/static/catalog/images/variations/syrniki-with-condensed-milk-4.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 4,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 270,
+    "product": 61
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 208,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 159,
+    "image": "apps/catalog/static/catalog/images/variations/cheesecakes-with-raspberry-2_jam.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 2,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 150,
+    "product": 62
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 209,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 309,
+    "image": "apps/catalog/static/catalog/images/variations/cheesecakes-with-raspberry-4_jam.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 4,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 280,
+    "product": 62
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 210,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 145,
+    "image": "apps/catalog/static/catalog/images/variations/cheesecakes-2.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 2,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 130,
+    "product": 63
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 211,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 219,
+    "image": "apps/catalog/static/catalog/images/variations/cheese-omelet-in-pit.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 160,
+    "product": 39
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 212,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 219,
+    "image": "apps/catalog/static/catalog/images/variations/omelet-with-pepperoni-in-pit.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 160,
+    "product": 36
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 213,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 219,
+    "image": "apps/catalog/static/catalog/images/variations/omelet-with-ham-and-mushrooms-in-pit.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 160,
+    "product": 34
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 214,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 249,
+    "image": "apps/catalog/static/catalog/images/variations/blackberry-raspberry-milkshake.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.3",
+    "weight": null,
+    "mass": 300,
+    "product": 67
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 215,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 249,
+    "image": "apps/catalog/static/catalog/images/variations/pina-colada-milkshake.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.3",
+    "weight": null,
+    "mass": 300,
+    "product": 68
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 216,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 249,
+    "image": "apps/catalog/static/catalog/images/variations/milk-shake-with-oreo-cookies.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.3",
+    "weight": null,
+    "mass": 320,
+    "product": 69
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 217,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 215,
+    "image": "apps/catalog/static/catalog/images/variations/classic-milkshake.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.3",
+    "weight": null,
+    "mass": 280,
+    "product": 70
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 218,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 249,
+    "image": "apps/catalog/static/catalog/images/variations/strawberry-milkshake.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.3",
+    "weight": null,
+    "mass": 310,
+    "product": 71
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 219,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 10,
+    "image": "apps/catalog/static/catalog/images/variations/dodo-hood.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": null,
+    "product": 119
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 220,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 10,
+    "image": "apps/catalog/static/catalog/images/variations/dodo-beak.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": null,
+    "product": 118
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 221,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 10,
+    "image": "apps/catalog/static/catalog/images/variations/dodo-coloring-book.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": null,
+    "product": 117
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 222,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 955,
+    "image": "apps/catalog/static/catalog/images/variations/coffee-beans-branded-blend.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": null,
+    "weight": "0.5",
+    "mass": 500,
+    "product": 116
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 223,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 45,
+    "image": "apps/catalog/static/catalog/images/variations/honey-mustard.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 25,
+    "product": 109
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 224,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 45,
+    "image": "apps/catalog/static/catalog/images/variations/sweet-chili.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 25,
+    "product": 110
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 225,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 45,
+    "image": "apps/catalog/static/catalog/images/variations/cheesy.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 25,
+    "product": 111
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 226,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 45,
+    "image": "apps/catalog/static/catalog/images/variations/garlic.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 25,
+    "product": 112
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 227,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 45,
+    "image": "apps/catalog/static/catalog/images/variations/barbecue.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 25,
+    "product": 113
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 228,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 45,
+    "image": "apps/catalog/static/catalog/images/variations/raspberry-jam.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 25,
+    "product": 114
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 229,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 15,
+    "image": "apps/catalog/static/catalog/images/variations/condensed-milk-in-sticks-7g.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 7,
+    "product": 115
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 230,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 115,
+    "image": "apps/catalog/static/catalog/images/variations/dodobones-8.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 8,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 120,
+    "product": 96
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 231,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 215,
+    "image": "apps/catalog/static/catalog/images/variations/dodobones-16.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 16,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 270,
+    "product": 96
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 232,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 289,
+    "image": "apps/catalog/static/catalog/images/variations/brusletics-16.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 16,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 280,
+    "product": 97
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 233,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 169,
+    "image": "apps/catalog/static/catalog/images/variations/new-york-cheesecake-with-coconut.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 100,
+    "product": 98
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 234,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 189,
+    "image": "apps/catalog/static/catalog/images/variations/cheesecake-new-york.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 100,
+    "product": 99
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 235,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 129,
+    "image": "apps/catalog/static/catalog/images/variations/mango-passion-fruit-macaroni.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 2,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 24,
+    "product": 100
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 236,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 105,
+    "image": "apps/catalog/static/catalog/images/variations/chocolate-cookies.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 70,
+    "product": 103
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 237,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 409,
+    "image": "apps/catalog/static/catalog/images/variations/fondan.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 2,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 160,
+    "product": 104
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 238,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 109,
+    "image": "apps/catalog/static/catalog/images/variations/salted-caramel-muffin.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 120,
+    "product": 105
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 239,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 109,
+    "image": "apps/catalog/static/catalog/images/variations/muffins-three-chocolates.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 120,
+    "product": 106
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 240,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 155,
+    "image": "apps/catalog/static/catalog/images/variations/lemon-fresh-sorbet.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 90,
+    "product": 107
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 241,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 155,
+    "image": "apps/catalog/static/catalog/images/variations/strawberry-pomegranate-sorbet.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 90,
+    "product": 108
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 242,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 169,
+    "image": "apps/catalog/static/catalog/images/variations/banana-Cheesecake-with-chocolate-chip-cookies.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 100,
+    "product": 101
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 243,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 169,
+    "image": "apps/catalog/static/catalog/images/variations/mini-eclairs-with-custard.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 45,
+    "product": 102
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 244,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 299,
+    "image": "apps/catalog/static/catalog/images/variations/puff-pastry-sticks-with-pineapples-and-cr_lsnLuUd.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 8,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 240,
+    "product": 95
+  }
+}
+]

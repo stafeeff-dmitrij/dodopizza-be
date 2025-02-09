@@ -50,7 +50,7 @@ repos:
 #  rev: v1.9.0
 - hooks:
   - always_run: true
-    entry: ./scripts/run_tests.sh
+    entry: ./scripts/tests.sh
     id: django-test
     language: script
     name: run django tests
