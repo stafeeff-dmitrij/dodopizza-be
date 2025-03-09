@@ -51,16 +51,27 @@ services:
       - ./fixtures:/fixtures
       - static:/src/static
 
+  frontend:
+    build:
+      context: https://github.com/FreemaHG/dodopizza-fe.git
+      dockerfile: Dockerfile
+    volumes:
+      - frontend:/app/dist
+    depends_on:
+      - api
+
   nginx:
-    image: nginx
+    image: nginx:stable-alpine
+    ports:
+      - "80:80"
     volumes:
       - ./nginx/:/etc/nginx/templates/
       - static:/static
-    ports:
-      - "80:80"
+      - frontend:/usr/share/nginx/html
     depends_on:
       - api
 
 volumes:
   postgres_data:
   static:
+  frontend:
