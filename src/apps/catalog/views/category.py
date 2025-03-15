@@ -16,6 +16,11 @@ class CategoryListView(viewsets.ModelViewSet):
     Возврат категорий
     """
 
-    queryset = Category.objects.annotate(num_products=Count('products')).filter(num_products__gt=0).order_by('order')
+    queryset = (
+        Category.objects
+        .annotate(num_products=Count('products'))
+        .filter(num_products__gt=0, status=True)
+        .order_by('order')
+    )
     serializer_class = CategorySerializer
     pagination_class = None

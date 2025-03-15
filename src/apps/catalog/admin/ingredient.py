@@ -1,5 +1,7 @@
 from django.contrib import admin
 
+from apps.catalog.admin.actions import activate_record
+from apps.catalog.admin.actions.status import deactivate_record
 from apps.catalog.models import Ingredient
 
 
@@ -17,6 +19,8 @@ class IngredientAdmin(admin.ModelAdmin):
     list_editable = ('order', 'status')
     ordering = ('order',)
     list_per_page = 20
+
+    actions = (activate_record, deactivate_record)
 
     fieldsets = [
         (

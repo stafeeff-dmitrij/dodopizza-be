@@ -1,5 +1,7 @@
 from django.contrib import admin
 
+from apps.catalog.admin.actions import activate_record
+from apps.catalog.admin.actions.status import deactivate_record
 from apps.catalog.admin.filters.product import ProductEndedFilter
 from apps.catalog.models import Product
 
@@ -20,6 +22,8 @@ class ProductAdmin(admin.ModelAdmin):
     ordering = ('parent_category', 'order')
     filter_horizontal = ('categories', 'ingredients',)
     list_per_page = 20
+
+    actions = (activate_record, deactivate_record)
 
     def short_description(self, obj):
         if obj.description:

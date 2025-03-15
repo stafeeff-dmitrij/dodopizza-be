@@ -51,7 +51,7 @@ def get_all_product_queryset() -> QuerySet[Product]:
                         When(~Q(parent_category_id=CategoryType.pizza), then=Subquery(subq_product_img)),
                         output_field=ImageField()
                     )
-                ).filter(status=True).order_by('order')),
+                ).filter(status=True, variations__status=True).order_by('order')),
             Prefetch('products__variations', queryset=Variation.objects.order_by('order')),
         ).filter(status=True).order_by('order')
     )
