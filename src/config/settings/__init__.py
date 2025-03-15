@@ -6,6 +6,8 @@ from .django_db import *
 from .django_auth import *
 from .django_static import *
 from .django_i18n import *
+from .django_logging import *
+from .django_caches import *
 
 from .rest_framework import *
 from .spectacular import *

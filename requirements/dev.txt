@@ -1,2 +1,3 @@
 -r base.txt
 pre-commit==4.0.1
+commitizen==4.1.0

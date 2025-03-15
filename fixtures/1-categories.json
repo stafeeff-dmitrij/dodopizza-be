@@ -1,0 +1,119 @@
+[
+{
+  "model": "catalog.category",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "name": "Новинки"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 2,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "name": "Пиццы"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 3,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "name": "Комбо"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 4,
+  "fields": {
+    "order": 4,
+    "status": true,
+    "name": "Закуски"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 5,
+  "fields": {
+    "order": 5,
+    "status": true,
+    "name": "Завтрак"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 6,
+  "fields": {
+    "order": 6,
+    "status": true,
+    "name": "Коктейли"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 7,
+  "fields": {
+    "order": 7,
+    "status": true,
+    "name": "Кофе"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 8,
+  "fields": {
+    "order": 8,
+    "status": true,
+    "name": "Напитки"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 9,
+  "fields": {
+    "order": 9,
+    "status": true,
+    "name": "Десерты"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 10,
+  "fields": {
+    "order": 10,
+    "status": true,
+    "name": "Соусы"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 11,
+  "fields": {
+    "order": 11,
+    "status": true,
+    "name": "Другие товары"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 12,
+  "fields": {
+    "order": 12,
+    "status": true,
+    "name": "Хиты"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 13,
+  "fields": {
+    "order": 13,
+    "status": true,
+    "name": "Любят дети"
+  }
+}
+]

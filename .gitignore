@@ -129,5 +129,6 @@ dmypy.jsong
 # Pyre type checker
 .pyre/
 .idea/*
-.env
+/.env*
 /.idea/
+*.DS_Store
