@@ -1,0 +1,24 @@
+[
+{
+  "model": "catalog.ingredient",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "name": "Сироп со вкусом яблочного пирога",
+    "image": "apps/catalog/static/catalog/images/ingredients/apple-pie-flavored-syrup.png",
+    "category": 3
+  }
+},
+{
+  "model": "catalog.ingredient",
+  "pk": 2,
+  "fields": {
+    "order": 2,
+    "status": false,
+    "name": "Кокосовый сироп",
+    "image": "apps/catalog/static/catalog/images/ingredients/coconut-syrup.png",
+    "category": 3
+  }
+}
+]

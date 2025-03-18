@@ -53,7 +53,8 @@ def get_all_product_queryset() -> QuerySet[Product]:
                     )
                 ).filter(status=True, variations__status=True).order_by('order')),
             Prefetch('products__variations', queryset=Variation.objects.order_by('order')),
-        ).filter(status=True).order_by('order')
+            # активные категории с активными товарами с активными вариациями
+        ).filter(status=True, products__status=True, products__variations__status=True).distinct().order_by('order')
     )
 
 
@@ -82,7 +83,7 @@ def get_product_detail_queryset() -> QuerySet[Product]:
     Возврат оптимизированного Queryset-объекта с детальной информацией о товаре
     """
 
-    return (Product.objects.filter(status=True)
+    return (Product.objects.filter(status=True, variations__status=True).distinct()
             .prefetch_related(
             Prefetch('ingredients', queryset=Ingredient.objects.filter(
                 status=True).order_by('order').only('id', 'name')),

@@ -5,7 +5,6 @@ from django.http import QueryDict
 
 from apps.catalog.constants import SortTypeProduct
 from apps.catalog.models import Product
-from apps.catalog.utils.filter import get_partial_match
 from apps.exceptions import InvalidDataResponseException
 
 logger = logging.getLogger(__name__)
@@ -40,10 +39,11 @@ class ProductFilterServices:
                 except ValueError as exc:
                     logger.error(exc)
 
-        return products.filter(status=True).distinct()
+        # только активные товары с активными вариациями
+        return products.filter(status=True, variations__status=True).distinct()
 
     @classmethod
-    def __sort(cls, products: QuerySet[Product], sort_name: str = None) -> QuerySet[Product]:
+    def __sort(cls, products: QuerySet[Product], sort_name: str | None = None) -> QuerySet[Product]:
         """
         Сортировка товаров
         @param products: товары
@@ -95,7 +95,8 @@ class ProductFilterServices:
 
         # Фильтрация
         filter_params = params.copy()
-        partial_params = get_partial_match(filter_params, cls.FILTER_FIELDS)
+        # отсеиваем параметры, по которым не надо фильтровать, н-р, параметры пагинации, типа сортировки
+        partial_params = set(filter_params.keys()) & set(cls.FILTER_FIELDS.keys())
 
         products = Product.objects.annotate(min_price=Min('variations__price'))
 

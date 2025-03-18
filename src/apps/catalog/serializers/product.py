@@ -27,7 +27,7 @@ class ProductSerializer(serializers.ModelSerializer):
             return get_url_str_image(obj.image) if obj.image else None
         except AttributeError:
             logger.error('Не найдено изображение товара')
-            pass
+            return None
 
     def get_variations_have(self, obj) -> bool:
         """

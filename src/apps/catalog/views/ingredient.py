@@ -25,11 +25,11 @@ class IngredientsListView(generics.GenericAPIView, mixins.ListModelMixin):
         category_id = self.request.query_params.get('category_id')
 
         if category_id:
-            ingredients = Ingredient.objects.filter(category_id=category_id, status=True)
+            ingredients = Ingredient.objects.filter(category_id=category_id)
         else:
-            ingredients = Ingredient.objects.filter(status=True)
+            ingredients = Ingredient.objects.all()
 
-        return ingredients.order_by('order')
+        return ingredients.filter(status=True).order_by('order')
 
     @extend_schema(
         parameters=[

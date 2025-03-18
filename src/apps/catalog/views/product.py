@@ -1,3 +1,4 @@
+from django.http import QueryDict
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
 from drf_spectacular.utils import OpenApiParameter, extend_schema
@@ -41,7 +42,7 @@ class ProductsFilterListView(generics.GenericAPIView, mixins.ListModelMixin):
     serializer_class = ProductSerializer
     pagination_class = CatalogPagination
 
-    def get_queryset(self) -> list[Product]:
+    def get_queryset(self) -> QueryDict[Product]:
         """
         Фильтрация и сортировка товаров
         """

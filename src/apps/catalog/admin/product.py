@@ -25,29 +25,26 @@ class ProductAdmin(admin.ModelAdmin):
 
     actions = (activate_record, deactivate_record)
 
+    @admin.display(description='Описание')
     def short_description(self, obj):
         if obj.description:
             return obj.description[:50]
         else:
             return '-'
 
-    short_description.short_description = 'Описание'
-
+    @admin.display(description='Категории')
     def all_categories(self, obj):
         """
         Все категории, к которым принадлежит товар
         """
         return ', '.join(category.name for category in obj.categories.all())
 
-    all_categories.short_description = 'Категории'
-
+    @admin.display(description='Ингредиенты по умолчанию')
     def default_ingredients(self, obj):
         """
         Ингредиенты по умолчанию
         """
         return ', '.join(ingredient.name for ingredient in obj.ingredients.all())
-
-    default_ingredients.short_description = 'Ингредиенты по умолчанию'
 
     fieldsets = [
         (
