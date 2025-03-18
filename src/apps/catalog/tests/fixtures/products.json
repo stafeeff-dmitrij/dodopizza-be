@@ -1,0 +1,53 @@
+[
+{
+  "model": "catalog.product",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "name": "Кофе Карамельный капучино",
+    "description": "Классический капучино с молочной пенкой и карамельным сиропом",
+    "count": 15,
+    "parent_category": 3,
+    "categories": [
+      3
+    ],
+    "ingredients": [
+      1
+    ]
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 2,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "name": "Креветки",
+    "description": "Цельные креветки в хрустящей панировке",
+    "count": 15,
+    "parent_category": 2,
+    "categories": [
+      1,
+      2
+    ],
+    "ingredients": []
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 3,
+  "fields": {
+    "order": 3,
+    "status": true,
+    "name": "Омлет с беконом",
+    "description": "Классическое сочетание горячего омлета с поджаристой корочкой и бекона с добавлением моцареллы и томатов на завтрак",
+    "count": 45,
+    "parent_category": 2,
+    "categories": [
+      2
+    ],
+    "ingredients": []
+  }
+}
+]

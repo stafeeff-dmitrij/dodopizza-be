@@ -1,0 +1,74 @@
+[
+{
+  "model": "catalog.variation",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 169,
+    "image": "apps/catalog/static/catalog/images/variations/caramel-cappuccino-coffee.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": null,
+    "portion_size": null,
+    "volume": "0.3",
+    "weight": null,
+    "mass": 230,
+    "product": 1
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 2,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 219,
+    "image": "apps/catalog/static/catalog/images/variations/shrimp-3.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 3,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 40,
+    "product": 2
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 3,
+  "fields": {
+    "order": 2,
+    "status": true,
+    "price": 349,
+    "image": "apps/catalog/static/catalog/images/variations/shrimp-5.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 5,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 70,
+    "product": 2
+  }
+},
+{
+  "model": "catalog.variation",
+  "pk": 4,
+  "fields": {
+    "order": 1,
+    "status": true,
+    "price": 200,
+    "image": "apps/catalog/static/catalog/images/variations/omelet-with-bacon-in-pit.avif",
+    "pizza_size": null,
+    "pizza_type": null,
+    "count": 1,
+    "portion_size": null,
+    "volume": null,
+    "weight": null,
+    "mass": 180,
+    "product": 3
+  }
+}
+]

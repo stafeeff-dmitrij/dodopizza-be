@@ -11,7 +11,7 @@ from apps.catalog.views.product import (
 urlpatterns = [
     path('categories/', CategoryListView.as_view({'get': 'list'}), name='categories'),
     path('ingredients/', IngredientsListView.as_view(), name='ingredients'),
-    path('all_products/', AllProductsListView.as_view({'get': 'list'}), name='all_products'),
+    path('all_products/', AllProductsListView.as_view({'get': 'list'}), name='all-products'),
 
     path('products/', include([
         path('', ProductsFilterListView.as_view(), name='products'),

@@ -1,4 +1,3 @@
-from django.db.models import Count
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
 from drf_spectacular.utils import extend_schema
@@ -16,11 +15,11 @@ class CategoryListView(viewsets.ModelViewSet):
     Возврат категорий
     """
 
+    # активные категории с активными товарами с активными вариациями
     queryset = (
         Category.objects
-        .annotate(num_products=Count('products'))
-        .filter(num_products__gt=0, status=True)
-        .order_by('order')
+        .filter(status=True, products__status=True, products__variations__status=True)
+        .order_by('order').distinct()
     )
     serializer_class = CategorySerializer
     pagination_class = None

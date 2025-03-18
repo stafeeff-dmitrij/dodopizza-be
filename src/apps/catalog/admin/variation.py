@@ -26,7 +26,7 @@ class VariationAdmin(admin.ModelAdmin):
                     'volume', 'weight', 'mass', 'price', 'ingredients_count', 'order', 'status')
     list_display_links = ('product',)
     list_filter = ('product__parent_category', 'product__categories', 'pizza_size',
-                   'pizza_type', 'count', 'portion_size', 'volume', 'weight')
+                   'pizza_type', 'count', 'portion_size', 'volume', 'weight', 'status')
     search_fields = ('product__name',)
     search_help_text = 'Поиск по названию товара'
     list_editable = ('order', 'status')
@@ -58,11 +58,10 @@ class VariationAdmin(admin.ModelAdmin):
 
     inlines = [VariationToIngredientInline]
 
+    @admin.display(description='Ингредиенты')
     def ingredients_count(self, obj) -> int | str:
         """
         Кол-во ингредиентов
         """
         ingredients_count = obj.ingredients.all().count()
         return ingredients_count if ingredients_count else '-'
-
-    ingredients_count.short_description = 'Ингредиенты'
