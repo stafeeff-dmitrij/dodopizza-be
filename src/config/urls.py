@@ -9,7 +9,13 @@ from drf_spectacular.views import (
 )
 
 urlpatterns = [
-    path('api/', include('apps.catalog.urls')),
+    # path('api/', include('apps.catalog.urls')),
+
+    path('api/', include([
+        path('', include('apps.catalog.urls')),
+        path('access/', include('apps.access.urls')),
+    ])),
+
     path('admin/', admin.site.urls),
     # Swagger UI
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),

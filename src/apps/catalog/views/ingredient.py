@@ -1,7 +1,7 @@
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
 from drf_spectacular.utils import OpenApiParameter, extend_schema
-from rest_framework import generics, mixins
+from rest_framework import generics, mixins, status
 
 from apps.catalog.models import Ingredient, Product
 from apps.catalog.serializers.ingredient import IngredientProductSerializer
@@ -32,9 +32,14 @@ class IngredientsListView(generics.GenericAPIView, mixins.ListModelMixin):
         return ingredients.filter(status=True).order_by('order')
 
     @extend_schema(
+        summary='Возврат ингредиентов',
+        description='Возврат ингредиентов с возможностью фильтрации по id категории',
         parameters=[
             OpenApiParameter(name='category_id', description='id категории', required=False, type=int),
         ],
+        responses={
+            status.HTTP_200_OK: IngredientProductSerializer,
+        }
     )
     def get(self, request):
         return self.list(request)

@@ -11,3 +11,4 @@ from .django_caches import *
 
 from .rest_framework import *
 from .spectacular import *
+from .email import *

@@ -1,7 +1,7 @@
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
 from drf_spectacular.utils import extend_schema
-from rest_framework import viewsets
+from rest_framework import status, viewsets
 
 from apps.catalog.models import Category
 from apps.catalog.serializers.category import CategorySerializer
@@ -23,3 +23,13 @@ class CategoryListView(viewsets.ModelViewSet):
     )
     serializer_class = CategorySerializer
     pagination_class = None
+
+    @extend_schema(
+        summary='Возврат категорий товаров',
+        description='Возврат всех категорий товаров',
+        responses={
+            status.HTTP_200_OK: CategorySerializer,
+        }
+    )
+    def list(self, request):
+        return super().list(request)
