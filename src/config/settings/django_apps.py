@@ -11,5 +11,6 @@ INSTALLED_APPS = [
     'corsheaders',
     'silk',
 
+    'apps.access',
     'apps.catalog',
 ]

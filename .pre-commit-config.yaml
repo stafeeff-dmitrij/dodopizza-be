@@ -47,7 +47,6 @@ repos:
   - id: mypy
   repo: https://github.com/pre-commit/mirrors-mypy
   rev: v1.9.0
-# TODO 12 раз запускается (в каждом ядре?), 1 успешный, 11 неуспешных, т.к. ошибка создания тестовой БД, т.к. test_dodopizza уже существует!
 - hooks:
   - always_run: true
     entry: ./scripts/tests.sh

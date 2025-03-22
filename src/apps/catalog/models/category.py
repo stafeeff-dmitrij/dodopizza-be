@@ -10,11 +10,11 @@ class Category(BaseModel):
 
     name = models.CharField(max_length=100, verbose_name='название')
 
+    def __str__(self) -> str:
+        return self.name
+
     class Meta:
         db_table = 'categories'
         verbose_name = 'категория'
         verbose_name_plural = 'категории'
         ordering = ('order',)
-
-    def __str__(self) -> str:
-        return self.name
