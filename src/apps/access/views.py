@@ -1,4 +1,6 @@
-from django.db import IntegrityError
+import logging
+
+from django.db import IntegrityError, transaction
 from drf_spectacular.utils import extend_schema
 from rest_framework import generics, status
 from rest_framework.response import Response
@@ -6,6 +8,8 @@ from rest_framework.response import Response
 from apps.access.models import AccessByIP
 from apps.access.serializers import AccessRequestSerializer
 from apps.access.services import AccessNotificationService
+
+logger = logging.getLogger(__name__)
 
 
 @extend_schema(tags=['Доступ'])
@@ -33,7 +37,8 @@ class AccessRequestView(generics.GenericAPIView):
         ip = request.META.get('REMOTE_ADDR')
 
         try:
-            AccessByIP.objects.create(ip=ip, access_to=None, **serializer.validated_data)
+            with transaction.atomic():
+                AccessByIP.objects.create(ip=ip, access_to=None, **serializer.validated_data)
         except IntegrityError:
             AccessByIP.objects.filter(ip=ip).update(access_to=None, **serializer.validated_data)
 

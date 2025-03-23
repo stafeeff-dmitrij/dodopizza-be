@@ -1,0 +1,12 @@
+[
+  {
+  "model": "access.accessbyip",
+  "pk": "127.0.0.1",
+  "fields": {
+    "email": "test@mail.ru",
+    "comment": "Проверка",
+    "period": "1M",
+    "access_to": "9999-12-31T15:23:59.591Z"
+  }
+}
+]
