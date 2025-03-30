@@ -1,0 +1,22 @@
+[
+{
+  "model": "catalog.variationtoingredient",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "variation": 1,
+    "ingredient": 1,
+    "price": 50
+  }
+},
+{
+  "model": "catalog.variationtoingredient",
+  "pk": 2,
+  "fields": {
+    "order": 2,
+    "variation": 1,
+    "ingredient": 2,
+    "price": 50
+  }
+}
+]

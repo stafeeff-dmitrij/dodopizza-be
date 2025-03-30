@@ -1,0 +1,4 @@
+-r base.txt
+pre-commit==4.0.1
+commitizen==4.1.0
+faker==37.0.2
