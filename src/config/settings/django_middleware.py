@@ -10,7 +10,6 @@ MIDDLEWARE = [
 
     # ограничение доступа по ip
     'config.middleware.access.filter_ip.FilterIPMiddleware',
-    'config.middleware.access.throttle_ip.throttle_ip_middleware',
 
     # проверка кол-ва запросов к БД
     # 'silk.middleware.SilkyMiddleware',

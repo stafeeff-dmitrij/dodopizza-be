@@ -1,3 +1,5 @@
+import logging
+
 from django.http import JsonResponse
 from django.utils import timezone
 from rest_framework import status
@@ -5,9 +7,13 @@ from rest_framework import status
 from apps.access.models import AccessByIP
 from apps.access.utils import get_access_to
 
+logger = logging.getLogger(__name__)
+
+
 ALLOWED_URL = (
-    '/admin',
-    '/api/access/request',
+    '/admin/',
+    '/media/',
+    '/api/access/request/',
 )
 
 
@@ -21,9 +27,9 @@ class FilterIPMiddleware:
 
     def __call__(self, request):
         ip = request.META.get('REMOTE_ADDR')
+        logger.info(f'ip: {ip}')
         record = AccessByIP.objects.filter(ip=ip).first()
 
-        # нет доступа либо доступ закончился (пропускаем в admin и на создание запроса доступа)
         if (not record or record.access_to and record.access_to <= timezone.now()) and not any(request.path.startswith(url) for url in ALLOWED_URL):
             return JsonResponse(
                 {'detail': 'Доступ ограничен'},

@@ -1,6 +1,3 @@
-import time
-from datetime import datetime
-
 from django.test import tag
 from django.urls import reverse
 from rest_framework import status
@@ -9,24 +6,6 @@ from apps.access.constants import AccessPeriodChoice
 from apps.access.models import AccessByIP
 from apps.access.tests.base import TestBase
 from apps.access.utils import get_access_to
-from config.middleware.access.throttle_ip import MAX_REQUESTS
-
-
-def recurring_requests(self):
-    """
-    Повторяющиеся запросы для проверки ограничения при превышении максимально допустимого кол-ва запросов
-    """
-    start_time = datetime.now()
-
-    for i in range(1, MAX_REQUESTS + 2):
-        response = self.client.get(reverse('categories'))
-        pass_sec = abs(datetime.now() - start_time).total_seconds()
-
-        if pass_sec <= 10:
-            if i <= MAX_REQUESTS:
-                self.assertEqual(response.status_code, status.HTTP_200_OK)
-            else:
-                self.assertEqual(response.status_code, status.HTTP_429_TOO_MANY_REQUESTS)
 
 
 class TestMiddleware(TestBase):
@@ -55,10 +34,9 @@ class TestMiddleware(TestBase):
         self.assertEqual(control_data.replace(microsecond=0), check_record.access_to.replace(microsecond=0))
 
     @tag('middleware')
-    def test_throttle_ip(self):
+    def test_filter_ip_for_admin(self):
         """
-        Проверка ограничения кол-ва запросов с одного ip
+        Проверка доступности админки
         """
-        recurring_requests(self)
-        time.sleep(10)
-        recurring_requests(self)  # проверка сброса ограничения через допустимый интервал времени
+        response = self.client.get(reverse('admin:login'))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)

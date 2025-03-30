@@ -53,7 +53,7 @@ services:
 
   frontend:
     build:
-      context: https://github.com/FreemaHG/dodopizza-fe.git
+      context: https://github.com/stafeeff-dmitrij/dodopizza-fe.git
       dockerfile: Dockerfile
     volumes:
       - frontend:/app/dist
@@ -70,6 +70,7 @@ services:
       - frontend:/usr/share/nginx/html
     depends_on:
       - api
+      - frontend
 
 volumes:
   postgres_data:
