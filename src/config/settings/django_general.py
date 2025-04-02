@@ -27,7 +27,8 @@ HTTP_PROTOCOL = env('HTTP_PROTOCOL', default='http')
 HOST = env('HOST', default='localhost')
 PORT = env('PORT', cast=int, default=8000)
 
-ALLOWED_HOSTS: list[str] = env('ALLOWED_ORIGINS').split(',')
+# ALLOWED_HOSTS: list[str] = env('ALLOWED_ORIGINS').split(',')
+ALLOWED_HOSTS: list[str] = ['*']
 CORS_ALLOWED_ORIGINS = env('ALLOWED_ORIGINS').split(',')
 CSRF_TRUSTED_ORIGINS = env('ALLOWED_ORIGINS').split(',')
 
