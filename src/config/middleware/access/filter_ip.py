@@ -11,9 +11,9 @@ logger = logging.getLogger(__name__)
 
 
 ALLOWED_URL = (
-    '/admin/',
-    '/media/',
-    '/api/access/request/',
+    '/admin',
+    '/media',
+    '/api/access/request',
 )
 
 

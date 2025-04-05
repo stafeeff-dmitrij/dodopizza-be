@@ -7,7 +7,7 @@
 **Фронт** - https://github.com/stafeeff-dmitrij/dodopizza-fe
 
 ## Инструменты
-* **Python (3.11)**;
+* **Python (3.13)**;
 * **Django + DRF** (web framework);
 * **PostgreSQL** (database);
 * **Redis** (caching);
